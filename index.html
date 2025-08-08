@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATaxfiler</title>
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <!-- font links -->
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@700&display=swap" rel="stylesheet">
+    <!-- external css link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="home" class="grid-bg-css-top top-box"> </div>
+    <div class="sticky-main px-5">
+        <nav class=" nav-bg navbar navbar-expand-lg bg-white rounded-pill border px-5 flex-wrap flex-md-column px-0">
+            <div class="container-fluid nav-flex-column flex-wrap nav-padding px-0">
+                <a class="navbar-brand" href="#">
+                    <img width="200px" class="logo ms-md-4" src="./images/logo.svg" alt="Tax Assist Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent"
+                    aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse nav-flex-column" id="navContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link " href="#home">Home</a></li>
+
+                        <li class="nav-item dropdown">
+                            <a href="#services" class="nav-link dropdown-toggle" id="servicesDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+                                Services
+                            </a>
+
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="servicesDropdown">
+                                <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#vat-filling">
+                                        <i class="bi bi-calculator"></i> VAT Filing
+                                    </a></li>
+                                <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#self-employed">
+                                        <i class="bi bi-person-badge"></i> Self-Employed
+                                    </a></li>
+                                <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#landlord">
+                                        <i class="bi bi-house-door"></i> Landlord
+                                    </a></li>
+                                <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#accountants">
+                                        <i class="bi bi-people"></i> Accountants
+                                    </a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item"><a class="nav-link " href="#how-it-works">How it Works</a></li>
+                        <li class="nav-item"><a class="nav-link " href="#pricing">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link " href="#contact">Contact</a></li>
+                    </ul>
+
+                    <div class="d-flex flex-column flex-lg-row align-items-center gap-3">
+                        <a class="nav-link" href="#">Login</a>
+                        <a class="cstm-btn btn btn-primary rounded-pill d-flex justify-content-center align-items-center"
+                            href="#">
+                            Get Started <img class="btn-img ms-3" src="./images/btn icon.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <section class="grid-bg-css first container-fluid  d-flex flex-column">
+        <main id="main" class="flex-grow-1 d-flex main-margin">
+            <div class="w-100">
+                <div class="main-box px-sm-0 px-md-2 pe-lg-0 ps-lg-4">
+                    <div class="row">
+                        <div class="col-lg-6 text-white text-start px-3 px-md-5 home-text-margin">
+                            <h1 class="display-4 h1-font fw-bold">SIMPLIFYING MAKING TAX DIGITAL FOR INCOME TAX SELF
+                                ASSESSMENT</h1>
+                            <p class="homePara my-4">Easily manage your digital tax records, submit quarterly
+                                updates,
+                                and stay fully compliant with HMRC's Making Tax Digital for Income Tax rules, all in
+                                one simple platform using @A1Taxfiler.</p>
+                            <div class=" d-flex">
+                                <a class="btn btn-light flex-wrap rounded-pill text-dark d-flex justify-content-center align-content-center"
+                                    href="#">
+                                    Start Filing Today <img class="home-btn-img ms-2" src="./images/btn icon blue.svg"
+                                        alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 px-0 mt-4">
+                            <!-- Hero Image -->
+                            <div class="text-center">
+                                <img class="img-fluid hero-image" src="./images/gif.png" alt="Tax expert illustration">
+                                <!-- <img class="img-fluid hero-image" src="./images/OIP.webp" alt="Tax expert illustration"> -->
+                            </div>
+
+                            <!-- Stats Section -->
+                            <div
+                                class="home-right-text d-flex justify-content-center align-items-center text-white gap-4 mt-3">
+
+                                <div
+                                    class="right-box d-flex flex-row justify-content-center align-items-start text-white">
+                                    <!-- Block 1 -->
+                                    <div class="right-boxes d-flex align-items-center gap-3 text-start">
+                                        <img src="./images/record.svg" alt="Return submitted icon"
+                                            class="stat-icon img-fluid" />
+                                        <div class="">
+                                            <h4><strong>125,000</strong></h4>
+                                            <span>Returns Submitted</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Block 2 -->
+                                    <div class="right-boxes d-flex align-items-center gap-3 text-start">
+                                        <img src="./images/review and sumit.svg" alt="HMRC recognised icon"
+                                            class="stat-icon img-fluid" />
+                                        <div class="">
+                                            <h4><strong>HMRC</strong></h4>
+                                            <span>Recognised</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Block 3 -->
+                                <div class="d-flex align-items-center gap-3 text-start">
+                                    <img src="./images/paypal.png" alt="Signup icon"
+                                        class="img-width stat-icon img-fluid" />
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <section id="how-it-works" class="second py-5 bg-white">
+        <div class="box">
+            <div class="box-heading text-center">
+                <h2 class="heading">NO WORRIES!</h2>
+                <h2 class="heading">EVEN IF IT'S YOUR FIRST TIME FILING WITH MTD</h2>
+                <p class="">
+                    We make it simple. @A1Taxfiler guides you through every step with plain English questions,
+                </p>
+                <p>No jargon, No confusing forms, No stress.</p>
+            </div>
+
+            <div class="grid-container ps-lg-2">
+                <!-- Block 1 -->
+                <div class="grid-section d-flex align-items-center min-vh-75">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 px-0">
+                                <div class="image-container text-center">
+                                    <img class="img-fluid section-image" src="./images/tax expert.png" alt="Tax Expert">
+                                </div>
+                            </div>
+                            <div class="col-md-6 px-2">
+                                <div class="content ps-lg-5">
+                                    <h3 class="display-6 fw-bold mb-4">YOU DON'T NEED TO BE A TAX EXPERT</h3>
+                                    <p class="lead mb-4">Our intuitive platform makes filing your digital tax
+                                        returns
+                                        simple and stress-free,
+                                        even if you're not a tax professional.</p>
+                                    <div class="d-flex btn-inline">
+                                        <a class="cstm-btn btn btn-primary rounded-pill d-flex justify-content-center align-items-center"
+                                            href="#">
+                                            Get Started <img class="btn-img ms-3" src="./images/btn icon.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Block 2 -->
+                <div class="grid-section d-flex align-items-center bg-light">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 order-md-2 px-0">
+                                <div class="image-container text-center">
+                                    <img class="img-fluid section-image" src="./images/FAST. RELIABLE..png"
+                                        alt="Fast Reliable Illustration">
+                                </div>
+                            </div>
+                            <div class="col-md-6 order-md-1 px-2">
+                                <div class="content pe-lg-5">
+                                    <h3 class="display-6 fw-bold mb-0">FAST. RELIABLE.</h3>
+                                    <h3 class="display-6 fw-bold mb-4">BUILT FOR BUSY LIVES.</h3>
+                                    <p class="paraFont lead mb-4">From April 2026, landlords and self-employed
+                                        individuals
+                                        earning over £50,000
+                                        annually must keep digital records and submit quarterly updates to HMRC
+                                        under
+                                        Making Tax
+                                        Digital for Income Tax (MTD ITSA).</p>
+                                    <p class="paraFont fw-bold mb-4">Our software is designed to make this process
+                                        seamless,
+                                        accurate, and
+                                        stress-free for you.</p>
+                                    <div class="d-flex btn-inline">
+                                        <a class="cstm-btn btn btn-primary rounded-pill d-flex justify-content-center align-items-center"
+                                            href="#">
+                                            Get Started <img class="btn-img ms-3" src="./images/btn icon.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Block 3 -->
+                <div class="grid-section d-flex align-items-center">
+                    <div class="container px-2">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 mb-5 px-2">
+                                <div class="content">
+                                    <h3 class="display-6 fw-bold mb-4">STEPWISE GUIDANCE FOR REGISTRATION</h3>
+                                    <p class="lead mb-4">Your taxes shouldn't be complicated and with @A1Taxfiler,
+                                        they're not.
+                                        We make it easy to stay HMRC-compliant, save money, and file your return
+                                        from
+                                        anywhere,
+                                        no paperwork or accounting experience required.</p>
+                                    <div class="d-flex btn-inline">
+                                        <a class="btn btn-primary rounded-pill px-4 py-3 ps-5  d-flex justify-content-center align-items-center"
+                                            href="#">
+                                            Get Started Today <img class="btn-img ms-3" src="./images/btn icon.svg"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 px-0">
+                                <div class="steps-container">
+                                    <!-- Step 1 -->
+                                    <div class="step-item gap-1">
+                                        <div class="icon-box down left-radius">
+                                            <img src="./images/shignup.svg" class="img-fluid" alt="icon">
+                                        </div>
+                                        <div class="step-card right-radius">
+                                            <div class="step-content">
+                                                <h5 class="fw-bold">Sign Up & Connect HMRC</h5>
+                                                <p class="mb-0">Register your account and securely authorise your
+                                                    HMRC
+                                                    connection.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Step 2 -->
+                                    <div class="step-item gap-1">
+                                        <div class="step-card left-radius">
+                                            <div class="step-content text-end">
+                                                <h5 class="fw-bold">Create your account with A1Taxfiler</h5>
+                                                <p class="mb-0">Sign up in minutes. No complex forms, just your
+                                                    email
+                                                    and few basic details.</p>
+                                            </div>
+                                        </div>
+                                        <div class="icon-box up right-radius">
+                                            <img src="./images/profile.svg" class="img-fluid" alt="icon">
+                                        </div>
+                                    </div>
+
+                                    <!-- Step 3 -->
+                                    <div class="step-item gap-1">
+                                        <div class="icon-box down left-radius">
+                                            <img src="./images/record.svg" class="img-fluid" alt="icon">
+                                        </div>
+                                        <div class="step-card right-radius p-3 p-lg-4">
+                                            <div class="step-content">
+                                                <h5 class="fw-bold">Record Income & Expenses</h5>
+                                                <p class="mb-0">Easily log your business or property transactions
+                                                    digitally using our
+                                                    Spreadsheet/excel compatible for MTD submission.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Step 4 -->
+                                    <div class="step-item gap-1">
+                                        <div class="step-card left-radius">
+                                            <div class="step-content text-end mt-3">
+                                                <h5 class="fw-bold">Review and submit</h5>
+                                                <p class="mb-0">Review your data then upload/file instantly.</p>
+                                            </div>
+                                        </div>
+                                        <div class="icon-box up right-radius">
+                                            <img src="./images/review and sumit.svg" class="img-fluid" alt="icon">
+                                        </div>
+                                    </div>
+
+                                    <!-- Step 5 -->
+                                    <div class="step-item gap-1">
+                                        <div class="icon-box down left-radius">
+                                            <img src="./images/conformation.svg" class="img-fluid" alt="icon">
+                                        </div>
+                                        <div class="step-card right-radius">
+                                            <div class="step-content">
+                                                <h5 class="fw-bold">Get Confirmation</h5>
+                                                <p class="mb-0">Receive instant filing confirmation and digital
+                                                    proof of
+                                                    your records.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="services" class="third my-5 bg-white">
+        <div class="box">
+            <div class=" text-center">
+                <h2 class="heading">WHAT WE HELP YOU FILE</h2>
+                <p class="mx-md-5 px-md-5 mt-2">
+                    This section should showcase the three main services clearly:
+                </p>
+            </div>
+
+            <div class="grid-container">
+                <!-- Block 1 -->
+                <div id="vat-filling" class="grid-section d-flex align-items-center min-vh-75">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 px-0">
+                                <div class="image-container text-center">
+                                    <img class="img-fluid section-image" src="./images/Vat.png" alt="Tax Expert">
+                                </div>
+                            </div>
+                            <div class="col-md-6 px-2">
+                                <div class="content ps-lg-5">
+                                    <h3 class="display-6 fw-bold mb-4">VAT FILING</h3>
+                                    <p class="lead mb-4">Businesses over the VAT threshold or voluntarily
+                                        registered. We
+                                        ensure full compliance with MTD for VAT and submit quarterly returns on your
+                                        behalf.</p>
+                                    <div class="d-flex btn-inline">
+                                        <a class=" btn btn-primary btn-lg rounded-pill  d-flex justify-content-center align-items-center"
+                                            href="#">
+                                            Start Your Return <img class="btn-img ms-2" src="./images/btn icon.svg"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Block 2 -->
+                <div id="self-employed" class="grid-section d-flex align-items-center bg-light">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 order-md-2 px-0">
+                                <div class="image-container text-center">
+                                    <img class="img-fluid section-image" src="./images/Self Emploee.png"
+                                        alt="Fast Reliable Illustration">
+                                </div>
+                            </div>
+                            <div class="col-md-6 order-md-1 px-2">
+                                <div class="content pe-lg-5">
+                                    <h3 class="display-6 fw-bold">SELF EMPLOYED</h3>
+                                    <p class="lead mb-4">If you are self employed with £50,000 qualifying income for
+                                        the
+                                        2024 to 2025 tax year, then you must use @A1Taxfiler from 6th April 2026. If
+                                        you
+                                        are not sure about allowed or disallowed business expenses, you our expert
+                                        accountants are here guide you.</p>
+                                    <div class="d-flex btn-inline">
+                                        <a class="btn btn-primary btn-lg rounded-pill px-4  d-flex justify-content-center align-items-center"
+                                            href="#">
+                                            Start Your Return <img class="btn-img ms-2" src="./images/btn icon.svg"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Block 3 -->
+                <div id="landlord" class="grid-section d-flex align-items-center min-vh-75">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 px-0">
+                                <div class="image-container text-center">
+                                    <img class="img-fluid section-image" src="./images/landlord.png" alt="Tax Expert">
+                                </div>
+                            </div>
+                            <div class="col-md-6 px-2">
+                                <div class="content ps-lg-5">
+                                    <h3 class="display-6 fw-bold mb-4">LANDLORD</h3>
+                                    <p class="lead mb-4">If you are a landlord with £50,000 qualifying income for
+                                        the
+                                        2024 to 2025 tax year, then you must use @A1Taxfiler from 6th April 2026. If
+                                        you
+                                        are not sure which expense you can claim against your rental income and what
+                                        are
+                                        capital expenses then our expert accountants are here guide you.</p>
+                                    <div class="d-flex btn-inline">
+                                        <a class="btn btn-primary btn-lg rounded-pill px-4  d-flex justify-content-center align-items-center"
+                                            href="#">
+                                            Start Your Return <img class="btn-img ms-2" src="./images/btn icon.svg"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Block 4 -->
+                <div id="accountants" class="grid-section d-flex align-items-center bg-light">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 order-md-2 px-0">
+                                <div class="image-container text-center">
+                                    <img class="img-fluid section-image" src="./images/accountant.png"
+                                        alt="Fast Reliable Illustration">
+                                </div>
+                            </div>
+                            <div class="col-md-6 order-md-1 px-2">
+                                <div class="content pe-lg-5">
+                                    <h3 class="display-6 fw-bold mb-4">ACCOUNTANTS</h3>
+                                    <p class="lead mb-4">If you're an accountant, bookkeeper, or tax professional
+                                        submitting quarterly updates, @A1Taxfiler is the hassle-free platform you
+                                        need
+                                        to file them quickly and efficiently.</p>
+                                    <div class="d-flex btn-inline">
+                                        <a class="btn btn-primary btn-lg rounded-pill px-4  d-flex justify-content-center align-items-center"
+                                            href="#">
+                                            Start Your Return <img class="btn-img ms-2" src="./images/btn icon.svg"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="pricing" class="forth my-5 py-4 py-lg-5">
+        <div class="container">
+            <div class="text-center mb-lg-5">
+                <h2 class="heading">PICK YOUR FILING PLAN</h2>
+                <p class="mx-md-5 px-md-5">
+                    Get started for free, and only pay once you've completed your
+                </p>
+                <p>expat tax return and are ready to e-file.</p>
+            </div>
+
+            <div class="container px-0">
+                <div class="row  justify-content-center">
+                    <!-- Card 1 -->
+                    <div class="col-lg-4 col-md-6 cards">
+                        <div class="pricing-card h-100 p-lg-4 p-3">
+                            <div class="pricing-header">
+                                <h3>VAT FILING</h3>
+                            </div>
+                            <div class="pricing-price">
+                                <h1 class="card-header"> £9.95</h1>
+                                <small class="pt-5">Month</small>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a href="#" class="btn get-started-btn ">Get started</a>
+                            </div>
+                            <ul class="list-unstyled features-list mt-4">
+                                <li><img src="./images/li icon.svg" class="feature-icon" alt=""> Quarterly Submissions
+                                </li>
+                                <li><img src="./images/li icon.svg" class="feature-icon" alt=""> Year-End Finalisation
+                                </li>
+                                <li><img src="./images/li icon.svg" class="feature-icon" alt=""> Digital Record Keeping
+                                </li>
+                                <li><img src="./images/li icon.svg" class="feature-icon" alt=""> Income & Expense
+                                    Categorisation</li>
+                                <li><img src="./images/li icon.svg" class="feature-icon" alt=""> VAT Integration</li>
+                            </ul>
+                            <div class="collapse" id="vatMore">
+                                <ul class="list-unstyled features-list mt-2">
+                                    <li><img src="./images/li icon.svg" class="feature-icon" alt="">Free HMRC Agent
+                                        Authorisation Integration</li>
+                                    <li><img src="./images/li icon.svg" class="feature-icon" alt=""> Submission History
+                                        &
+                                        Receipts</li>
+                                    <li><img src="./images/li icon.svg" class="feature-icon" alt=""> Live Submission
+                                        Tracking</li>
+                                    <li><img src="./images/li icon.svg" class="feature-icon" alt=""> Dedicated Support
+                                    </li>
+                                    <li><img src="./images/li icon.svg" class="feature-icon" alt=""> Secure Cloud
+                                        Storage
+                                    </li>
+                                    <li><img src="./images/li icon.svg" class="feature-icon" alt=""> Automated Reminders
+                                        &
+                                        Alerts
+                                    </li>
+                                    <li><img src="./images/li icon.svg" class="feature-icon" alt=""> Free Updates &
+                                        Compliance</li>
+                                </ul>
+                            </div>
+                            <button
+                                class="btn btn-link p-0 mt-2 text-primary toggle-btn d-flex align-items-center gap-2"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#vatMore" aria-expanded="false"
+                                aria-controls="vatMore">
+                                <span class="toggle-text">Show More</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-lg-4 col-md-6 cards">
+                        <div class="pricing-card h-100 p-lg-4 p-3">
+                            <div class="pricing-header">
+                                <h3>MTD ITSA</h3>
+                            </div>
+                            <div class="pricing-price">
+                                <h1 class="card-header"> £9.95</h1>
+                                <small class="pt-5">Month</small>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a href="#" class="btn get-started-btn ">Get started</a>
+                            </div>
+                            <ul class="list-unstyled features-list mt-4">
+                                <li><img src="./images/li icon.svg" class="feature-icon" alt=""> Quarterly Submissions
+                                </li>
+                                <li><img src="./images/li icon.svg" class="feature-icon" alt=""> Year-End Finalisation
+                                </li>
+                                <li><img src="./images/li icon.svg" class="feature-icon" alt=""> Digital Record Keeping
+                                </li>
+                                <li><img src="./images/li icon.svg" class="feature-icon" alt=""> Income & Expense
+                                    Categorisation</li>
+                                <li><img src="./images/li icon.svg" class="feature-icon" alt="">Free HMRC Agent
+                                    Authorisation
+                                    Integration
+                                </li>
+                            </ul>
+                            <div class="collapse" id="itsaMore">
+                                <ul class="list-unstyled features-list mt-2">
+                                    <li><img src="./images/li icon.svg" class="feature-icon" alt=""> Submission History
+                                        &
+                                        Receipts</li>
+                                    <li><img src="./images/li icon.svg" class="feature-icon" alt=""> Live Submission
+                                        Status
+                                        Tracking</li>
+                                    <li><img src="./images/li icon.svg" class="feature-icon" alt=""> Dedicated Support
+                                    </li>
+                                    <li><img src="./images/li icon.svg" class="feature-icon" alt=""> Secure Cloud
+                                        Storage
+                                    </li>
+                                    <li><img src="./images/li icon.svg" class="feature-icon" alt=""> Automated Reminders
+                                        %
+                                        Alerts
+                                    </li>
+                                    <li><img src="./images/li icon.svg" class="feature-icon" alt=""> Free Updates &
+                                        Compliance</li>
+                                </ul>
+                            </div>
+                            <button
+                                class="btn btn-link p-0 mt-2 text-primary toggle-btn-custom toggle-btn d-flex align-items-center gap-1"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#itsaMore" aria-expanded="false"
+                                aria-controls="itsaMore">
+                                <span class="toggle-text">Show More</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-lg-4 col-md-6 cards">
+                        <div class="pricing-card h-100 p-lg-4 p-3">
+                            <div class="pricing-header">
+                                <h3>MTD FOR AGENTS</h3>
+                            </div>
+                            <div class="pricing-price">
+                                <h1 class="card-header"> £9.95</h1>
+                                <small class="pt-5">Month</small>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a href="#" class="btn get-started-btn ">Get started</a>
+                            </div>
+                            <ul class="list-unstyled features-list mt-4">
+                                <li><img src="./images/li icon.svg" class="feature-icon" alt=""> Quarterly Submissions
+                                </li>
+                                <li><img src="./images/li icon.svg" class="feature-icon" alt=""> Year-End Finalisation
+                                </li>
+                                <li><img src="./images/li icon.svg" class="feature-icon" alt=""> Multiple Clients
+                                    Management
+                                </li>
+                                <li><img src="./images/li icon.svg" class="feature-icon" alt=""> Digital Record Keeping
+                                </li>
+                                <li><img src="./images/li icon.svg" class="feature-icon" alt=""> Income & Expense
+                                    Categorisation</li>
+                            </ul>
+                            <div class="collapse" id="agentMore">
+                                <ul class="list-unstyled features-list mt-2">
+                                    <li><img src="./images/li icon.svg" class="feature-icon" alt="">Free HMRC Agent
+                                        Authorisation</li>
+                                    <li><img src="./images/li icon.svg" class="feature-icon" alt=""> Submission History
+                                        &
+                                        Receipts</li>
+                                    <li><img src="./images/li icon.svg" class="feature-icon" alt=""> Live Submission
+                                        Tracking</li>
+                                    <li><img src="./images/li icon.svg" class="feature-icon" alt=""> Dedicated Support
+                                    </li>
+                                    <li><img src="./images/li icon.svg" class="feature-icon" alt=""> Secure Cloud
+                                        Storage
+                                    </li>
+                                    <li><img src="./images/li icon.svg" class="feature-icon" alt=""> Automated Reminders
+                                        &
+                                        alerts
+                                    </li>
+                                    <li><img src="./images/li icon.svg" class="feature-icon" alt=""> Multiple User
+                                        Access
+                                    </li>
+                                    <li><img src="./images/li icon.svg" class="feature-icon" alt=""> Free Updates &
+                                        Compliance</li>
+                                </ul>
+                            </div>
+                            <button
+                                class="btn btn-link p-0 mt-2 text-primary toggle-btn-custom toggle-btn d-flex align-items-center gap-1"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#agentMore"
+                                aria-expanded="false" aria-controls="agentMore">
+                                <span class="toggle-text">Show More</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="fifth d-flex align-items-center my-5">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+
+                <!-- Contact Form -->
+                <div class="col-lg-6 col-md-10">
+                    <div class="contact-form p-4 p-md-5 shadow rounded-4 h-100">
+                        <form action="" method="post">
+                            <div class="mb-4">
+                                <input id="name" type="text" name="name"
+                                    class="form-control form-control-lg rounded-3 shadow-sm" placeholder="Full Name"
+                                    autocomplete="on" />
+                            </div>
+                            <div class="mb-4">
+                                <input id="email" type="email" name="email"
+                                    class="form-control form-control-lg rounded-3 shadow-sm" placeholder="Email Address"
+                                    autocomplete="on" />
+                            </div>
+                            <div class="mb-4">
+                                <input id="subject" type="text" class="form-control form-control-lg rounded-3 shadow-sm"
+                                    placeholder="Subject" />
+                            </div>
+                            <div class="mb-4">
+                                <textarea id="about-business" name="about-business"
+                                    class="form-control form-control-lg rounded-3 shadow-sm" rows="4"
+                                    placeholder="about business"></textarea>
+                            </div>
+                            <div class="form-check mb-4  d-flex align-items-start gap-2">
+                                <input id="terms" name="terms" class="form-check-input mt-1 rounded-1"
+                                    type="checkbox" />
+                                <label class="form-check-label small text-muted" for="terms">
+                                    I accept the terms and conditions
+                                </label>
+                            </div>
+                            <div class="btn-inline">
+                                <button type="submit"
+                                    class="btn btn-primary submit-btn rounded-pill px-4 py-2 fs-5 gap-2  d-flex justify-content-center align-items-center">
+                                    Get Started
+                                    <img class="btn-img" src="./images/btn icon.svg" alt="arrow icon" />
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Contact Details -->
+                <div class="col-lg-6 col-md-10">
+                    <div class="contact-details mt-5 ms-lg-3">
+                        <h2 class="display-5 fw-bold mb-4 text-start">
+                            LETS GET IN <span class="color-main">TOUCH!</span>
+                        </h2>
+                        <p class=" mb-5 text-start">
+                            Have a project in mind or want to learn more about our services? Get
+                            in touch and let's explore how we can help you build bold digital
+                            experiences that move your brand forward.
+                        </p>
+
+                        <div class="contact-info">
+                            <div class="d-flex align-items-center mb-4 justify-content-center justify-content-lg-start">
+                                <div
+                                    class="contact-icon  rounded-circle d-flex align-items-center justify-content-center me-3">
+                                    <img src="./images/Call.svg" width="45px" alt="Phone icon">
+                                </div>
+                                <span>+00 000 000 000</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-4 justify-content-center justify-content-lg-start">
+                                <div
+                                    class="contact-icon  rounded-circle d-flex align-items-center justify-content-center me-3">
+                                    <img src="./images/Mail (1).svg" width="45px" alt="Email icon">
+                                </div>
+                                <span>Support@gmail.com</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-4 justify-content-center justify-content-lg-start">
+                                <div
+                                    class="contact-icon bg-main rounded-circle d-flex align-items-center justify-content-center me-3">
+                                    <i class="fas fa-clock text-white"></i>
+                                </div>
+                                <span>09:00 AM to 05:00 PM</span>
+                            </div>
+                            <div class="d-flex align-items-start mb-0 justify-content-center justify-content-lg-start">
+                                <div
+                                    class="contact-icon  rounded-circle d-flex align-items-center justify-content-center me-3 mt-1">
+                                    <img src="./images/Location.svg" width="45px" alt="Location icon">
+                                </div>
+                                <span>20 Wenlock Road, London, <br> England, N1 7GU</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class=" display-5 fw-bold color-main">OUR UK PAYMENT SOLUTIONS</h2>
+            </div>
+            <div class="row payment-images justify-content-around align-items-center gap-5 gap-md-0">
+                <div class="col-7 col-sm-4 col-md-3 text-center">
+                    <img class="img-fluid payment-logo" src="./images/paypal.png" alt="PayPal">
+                </div>
+                <div class="col-7 col-sm-4 col-md-3 text-center">
+                    <img class="img-fluid payment-logo" src="./images/Verisign.png" alt="Verisign">
+                </div>
+                <div class="col-7 col-sm-4 col-md-3 text-center">
+                    <img class="img-fluid payment-logo" src="./images/GeoTrust.png" alt="GeoTrust">
+                </div>
+                <div class="col-7 col-sm-4 col-md-3 text-center">
+                    <img class="img-fluid payment-logo" src="./images/Stripe.png" alt="Stripe">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="footer" class="grid-bg-css footer-section z-1">
+        <div class="container-fluid h-100 d-flex flex-column justify-content-between py-3">
+            <div class="row gap-4 ps-lg-3">
+                <!-- Logo + Description -->
+                <div class="col-lg-4 col-md-12  description mb-3 mb-lg- ps-1 px-lg-5">
+                    <img class="footer-logo img-fluid mb-3" src="./images/logo footer svg.svg" alt="Logo" />
+                    <p class="footer-para">@ATaxfiler provides Making Tax Digital (MTD) solutions tailored for
+                        individuals and businesses.
+                    </p>
+                    <p class="footer-para">@ATaxfiler Ltd is a company registered in England and Wales under company
+                        number 16574109.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#"><img src="./images/x.svg" alt=""></a>
+                        <a href="#"><img class="square-img" src="./images/facebook.svg" alt=""></a>
+                        <a href="#"><img src="./images/instagram.svg" alt=""></a>
+                        <!-- <a href="#"><img width="40px"
+                                src="./images/Linkedin Icon, Linkedin Icons, Linkedin Logo PNG and Vector with Transparent Background for Free Download.jpg"
+                                alt=""></a> -->
+                        <a href="#"><i class="bi bi-linkedin rounded-5 fs-1"></i></a>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-7 ps-1">
+
+                    <div class="footer-links-box d-flex flex-column flex-sm-row justify-content-around mt-lg-5">
+                        <!-- Services -->
+                        <div class="">
+                            <h4 class="fw-bold">Services</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#vat-filling">VAT Filing</a></li>
+                                <li><a href="#self-employed">MTD for Self Employment</a></li>
+                                <li><a href="#landlord">MTD for Landlords</a></li>
+                                <li><a href="#accountants">MTD for Accountants</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Resources -->
+                        <div class="">
+                            <h5 class="fw-bold">Resources</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#how-it-works">How it Works</a></li>
+                                <li><a href="#pricing">Pricing</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Legal -->
+                        <div class="">
+                            <h5 class="fw-bold">Legal</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Terms and conditions</a></li>
+                                <li><a href="#">Cookie statement</a></li>
+                                <li><a href="#">Privacy statement</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="container mail-container px-0">
+                        <div class="bottom-right">
+                            <p class="mail-p ms-4">Subscribe Our Newsletter</p>
+                            <div class="newsletter-box position-relative mt-2">
+                                <input id="email-msg" name="email-msg" type="email" class="form-control py-2 py-xl-3"
+                                    placeholder="Email" />
+                                <span class="mail-icon"><img class="email-img" src="./images/Mail (1).svg"
+                                        alt=""></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="footer-line">
+                <hr class="border-light mt-4" />
+            </div>
+            <p class="footer-para lastPara  mt-2 ">&copy; 2025 @ATaxfiler Ltd. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll(".toggle-btn").forEach(btn => {
+            const targetId = btn.getAttribute("data-bs-target");
+            const target = document.querySelector(targetId);
+
+            target.addEventListener("shown.bs.collapse", () => {
+                btn.textContent = "Show Less";
+            });
+
+            target.addEventListener("hidden.bs.collapse", () => {
+                btn.textContent = "Show More";
+            });
+        });
+
+
+    </script>
+
+
+
+</body>
+
+</html>
