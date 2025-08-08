@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
   color: var(--text-color);
   line-height: 1.6;
 }
@@ -1321,3 +1321,4 @@ p {
     margin-top: 1.5rem;
   }
 }
+
