@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: var(--text-color);
   line-height: 1.6;
 }
@@ -27,9 +27,30 @@ body {
   /* overflow-x: hidden; */
 }
 
-section,
+.container,
+.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.row {
+  --bs-gutter-x: 0;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.col,
+[class*="col-"] {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+main,
 footer {
-  padding: 3rem !important;
+  padding: 57px 96px 50px 123px;
+}
+
+section {
+  padding: 50px 96px 40px 123px;
 }
 
 .grid-bg-css-top {
@@ -80,26 +101,26 @@ footer {
 
 #main {
   position: relative;
-  margin-top: 65px;
+  margin-top: 75px;
+  padding-top: 2rem;
+}
+
+.first {
+  padding-bottom: 3rem;
 }
 
 .home-text-margin {
-  margin-top: 6rem;
+  margin-top: 10rem;
 }
 
 .navbar {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  padding: 1rem 1rem;
+  padding: 1.5rem 1rem;
   transition: all 0.3s ease;
 }
 
 .navbar-nav {
   gap: 1.5rem;
-}
-
-.row {
-  margin-left: 0;
-  margin-right: 0;
 }
 
 .nav-margin {
@@ -175,19 +196,19 @@ footer {
 
 /* Typography enhancements */
 .h1-font {
-  font-size: 50px;
+  font-size: 60px;
   color: white;
 }
 
 .hero-image {
-  width: 600px;
+  width: 650px;
 }
 
 /* Typography */
 
 p {
-  font-weight: 400;
-  font-size: 22px;
+  font-weight: 300;
+  font-size: 27px;
   word-spacing: 2px;
   margin-bottom: 2px;
 }
@@ -196,7 +217,7 @@ p {
   line-height: 1.64;
   letter-spacing: 2px;
   word-spacing: 1px;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 .home-btn-img {
@@ -244,10 +265,14 @@ p {
   color: var(--main-color) !important;
   word-spacing: 5px;
   letter-spacing: 0.5px;
-  font-size: 2.9rem;
+  font-size: 55px;
   line-height: 1.2;
   font-family: sans-serif;
   font-weight: 700;
+}
+
+.box-heading p {
+  font-size: 2rem;
 }
 
 .grid-section {
@@ -255,13 +280,17 @@ p {
 }
 
 .section-image {
-  background: #f5f7fa;
+  /* background: #f5f7fa; */
   max-width: 800px;
-  width: 600px;
+  width: 850px;
+}
+
+.content h3 {
+  font-size: 3.5rem;
 }
 
 .content {
-  padding: 2rem;
+  padding: 6.5rem;
 }
 
 .steps-container {
@@ -332,7 +361,12 @@ p {
 .lead {
   letter-spacing: 2px;
   word-spacing: 1px;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  line-height: 1.4;
+}
+
+.lead-bold {
+  font-size: 2rem;
   line-height: 1.4;
 }
 
@@ -356,14 +390,15 @@ p {
 .pricing-header h3 {
   font-weight: bolder;
   color: var(--main-color);
+  font-size: 3.3rem;
 }
 
 .pricing-price {
   background-color: var(--main-color);
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 1rem;
   font-weight: bold;
-  padding: 5px 0 5px;
+  padding: 10px 0;
   margin: 20px 0;
   display: flex;
   justify-content: center;
@@ -371,7 +406,7 @@ p {
 }
 
 .pricing-price .card-header {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
 }
 
 .pricing-price small {
@@ -438,13 +473,13 @@ p {
 /* Fifth Section - Contact */
 .fifth {
   background-color: #fff;
-  font-family: "Segoe UI", sans-serif;
+  /* font-family: "Segoe UI", sans-serif; */
 }
 
 /* Contact Form */
 .contact-form {
   background: #f5f7fa;
-  max-width: 550px;
+  /* max-width: 700px; */
   margin: 0 auto;
 }
 
@@ -477,6 +512,10 @@ p {
   height: 18px;
 }
 
+.contact-form .form-check-label {
+  font-size: 1.2rem;
+}
+
 .contact-form .btn-primary {
   background-color: var(--main-color, #213993);
   border: none;
@@ -489,8 +528,12 @@ p {
 
 /* Contact Details */
 .contact-details {
-  max-width: 500px;
+  /* max-width: 500px; */
   margin: 0 auto;
+}
+
+.contact-details p {
+  font-size: 2rem;
 }
 
 .contact-icon {
@@ -500,7 +543,7 @@ p {
 }
 
 .contact-info span {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   color: #333;
 }
 
@@ -548,8 +591,12 @@ p {
   overflow: hidden;
 }
 
+.footer-row {
+  gap: 4.1rem;
+}
+
 .description p {
-  word-spacing: 5px;
+  word-spacing: 4px;
   letter-spacing: 1px;
 }
 
@@ -565,7 +612,6 @@ p {
 
 .social-icons a img {
   width: 50px;
-  height: 50px;
   border-radius: 50%;
   background-color: transparent;
   object-fit: cover;
@@ -581,7 +627,7 @@ p {
   background-color: transparent;
   display: inline-block;
   text-align: center;
-  font-size: 20px;
+  font-size: 30px;
   transition: 0.3s ease;
 }
 
@@ -603,6 +649,7 @@ p {
 .list-unstyled li a {
   line-height: 2.2;
   font-size: 20px;
+  font-weight: 300;
 }
 
 .mail-container {
@@ -611,7 +658,7 @@ p {
   /* Horizontal: right */
   align-items: flex-end;
   /* Vertical: bottom */
-  height: 190px;
+  height: 275px;
 }
 
 .mail-p {
@@ -645,7 +692,7 @@ p {
 }
 
 .email-img {
-  width: 55px;
+  width: 65px;
 }
 
 .mail-icon {
@@ -662,6 +709,10 @@ p {
 }
 .footer-line {
   padding: 0 4rem;
+}
+
+.footer-rights {
+  margin-top: 42px;
 }
 
 /* Media Query */
@@ -684,21 +735,75 @@ p {
       linear-gradient(45deg, #167fcf, #213993);
   }
 
+  .first {
+    padding-bottom: 2rem;
+  }
+
   .h1-font {
-    font-size: 42px;
+    font-size: 46px;
   }
   .heading {
-    font-size: 37px;
+    font-size: 48px;
+  }
+  .box-heading p {
+    font-size: 1.1rem;
+  }
+  .content {
+    padding: 5rem;
+  }
+  .content h3 {
+    font-size: 43px;
   }
   .display-6 {
     font-size: 30px;
   }
+  .lead {
+    font-size: 1.38rem;
+  }
+  .lead-bold {
+    font-size: 1.4rem;
+  }
+  .stat-icon {
+    width: 65px;
+  }
+  .home-right-text span {
+    font-size: 12px;
+  }
+
+  .pricing-header h3 {
+    font-size: 2.3rem;
+  }
+  .contact-details p {
+    font-size: 1.5rem;
+  }
 
   .hero-image {
-    width: 500px;
+    width: 450px;
   }
   .homePara {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+  }
+  .section-image {
+    width: 600px;
+  }
+  .footer-logo {
+    width: 250px;
+  }
+
+  .footer-row {
+    gap: 4.5rem;
+  }
+  .footer-logo {
+    width: 325px;
+  }
+  .footer-para {
+    font-size: 19px;
+  }
+  .mail-container {
+    height: 155px;
+  }
+  .footer-rights {
+    margin-top: 38px;
   }
 }
 
@@ -714,6 +819,13 @@ p {
 }
 
 @media (max-width: 1024px) {
+  main,
+  footer {
+    padding: 62px 96px 50px 96px;
+  }
+  section {
+    padding: 50px 96px 40px 96px;
+  }
   .grid-bg-css-top {
     background: repeating-linear-gradient(
         to right,
@@ -731,10 +843,13 @@ p {
       ),
       linear-gradient(45deg, #1778c9, #213993);
   }
-  .main-box {
+  /* .main-box {
     padding-left: 2.5rem !important;
+  } */
+  .navbar {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1rem 1rem;
   }
-
   .home-right-text {
     line-height: 1;
   }
@@ -742,14 +857,17 @@ p {
     font-size: 38px;
   }
   .heading {
-    font-size: 32px;
+    font-size: 31px;
   }
   .display-6 {
     font-size: 30px;
   }
   .lead,
   p {
-    font-size: 18px;
+    font-size: 17px;
+  }
+  .lead-bold {
+    font-size: 17px;
   }
   .logo {
     width: 150px;
@@ -763,29 +881,39 @@ p {
   .nav-font {
     font-size: 12px !important;
   }
+  .home-text-margin {
+    margin-top: 103px;
+  }
   .right-box {
     gap: 0;
   }
   .right-boxes {
     gap: 12px !important;
   }
+
   .home-right-text h4 {
     font-size: 1rem;
   }
   .hero-image {
-    width: 400px;
+    width: 350px;
   }
   .box-heading {
-    padding: 0 1rem;
+    /* padding: 0 1rem; */
+  }
+  .content {
+    padding: 3rem;
+  }
+  .content h3 {
+    font-size: 29px;
   }
   .section-image {
-    width: 500px;
+    width: 425px;
   }
   .steps-container {
-    transform: scale(0.9);
+    transform: scale(0.85);
   }
   .stat-icon {
-    width: 60px;
+    width: 45px;
   }
   .img-width {
     width: 100px !important;
@@ -794,7 +922,7 @@ p {
     padding: 0 !important;
   }
   .homePara {
-    font-size: 1.2rem;
+    font-size: 18px;
   }
 
   .home-btn-img {
@@ -825,12 +953,70 @@ p {
     font-size: 1.25rem;
     margin: 1px;
   }
-  .description {
+  .pricing-header h3 {
+    font-size: 1.5rem;
+  }
+  .pricing-price .card-header {
+    font-size: 3rem;
+  }
+  .pricing-price {
+    font-size: 0.8rem;
+  }
+  .features-list {
+    font-size: 1rem;
+  }
+  .display-5 {
+    font-size: 31px;
+  }
+  .contact-details p,
+  .contact-info span {
+    font-size: 1.1rem;
+  }
+  .contact-icon img {
+    width: 40px;
+  }
+  .bg-main {
+    height: 40px;
+    width: 40px;
+  }
+  /* .description {
     padding-right: 1rem !important;
     padding-left: 1rem !important;
+  } */
+  .footer-logo {
+    width: 250px;
+  }
+  .footer-row {
+    gap: 2.5em;
+  }
+
+  .footer-para {
+    font-size: 16px;
+  }
+  .list-unstyled li a {
+    font-size: 16px;
   }
   .lastPara {
     margin-left: 2rem;
+  }
+  .social-icons a img {
+    width: 40px;
+  }
+  .newsletter-box input {
+    padding-right: 6rem;
+    padding-left: 15px;
+  }
+  .mail-container {
+    height: 95px;
+  }
+  .newsletter-box input {
+    font-size: medium;
+  }
+  .email-img {
+    width: 50px;
+  }
+  .footer-rights {
+    margin-top: -10px;
   }
   .footer-line {
     padding: 0 2rem;
@@ -838,6 +1024,13 @@ p {
 }
 
 @media (max-width: 992px) {
+  /* main,
+  footer {
+    padding: 62px 47px 50px 96px;
+  }
+  section {
+    padding: 50px 47px 40px 96px;
+  } */
   .grid-bg-css-top {
     background: repeating-linear-gradient(
         to right,
@@ -855,12 +1048,20 @@ p {
       ),
       linear-gradient(45deg, #1b63b7, #213993);
   }
+  .home-text-margin {
+    margin-top: 70px;
+  }
+  .h1-font {
+    font-size: 45px;
+  }
   .heading {
     font-size: 2rem;
   }
-
-  .padding {
-    padding: var(--space-lg);
+  .stat-icon {
+    width: 65px;
+  }
+  .home-right-text h4 {
+    font-size: 1.5rem;
   }
 
   .nav-flex-column {
@@ -897,7 +1098,14 @@ p {
   }
 
   .content {
-    padding: 15px;
+    padding: 1rem;
+  }
+  .content h3 {
+    font-size: 24px;
+  }
+  .lead,
+  p {
+    font-size: 16px;
   }
 
   .grid-section {
@@ -907,7 +1115,7 @@ p {
   }
 
   .section-image {
-    width: 350px;
+    width: 300px;
   }
   .display-6 {
     font-size: 1.7rem;
@@ -973,12 +1181,19 @@ p {
       linear-gradient(45deg, #1871c3, #213993);
   }
 
-  .main-box {
+  /* .main-box {
     padding-left: 1rem !important;
-  }
-  section,
+  } */
+  /* section,
   footer {
     padding: 2.5rem !important;
+  } */
+  main,
+  footer {
+    padding: 62px 76px 50px 65px;
+  }
+  section {
+    padding: 50px 76px 40px 65px;
   }
 
   .nav-flex-column {
@@ -1012,6 +1227,9 @@ p {
     font-size: 1.25rem;
     margin: 1px;
   }
+  .first {
+    padding-bottom: 0rem;
+  }
   .homePara {
     font-size: 1.1rem;
   }
@@ -1028,17 +1246,21 @@ p {
     margin-bottom: 1.5rem;
   }
 
-  .h1-font {
-    font-size: 40px;
-  }
   .section-image {
-    width: 325px;
+    width: 300px;
+  }
+
+  .heading {
+    font-size: 29px;
   }
   .display-6 {
     font-size: 1.5rem;
   }
+  .box-heading p {
+    font-size: 1rem;
+  }
   .lead {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .hero-image {
@@ -1055,18 +1277,13 @@ p {
   .home-right-text h4 {
     font-size: 1.5rem;
   }
-
-  .box p {
-    font-size: 1.1rem;
-    margin: 0;
-  }
   .steps-container {
-    transform: scale(0.96);
+    transform: scale(1);
   }
 
   .stat-icon {
-    width: 50px;
-    height: 50px;
+    /* width: 50px; */
+    /* height: 50px; */
   }
 
   .icon-box {
@@ -1109,6 +1326,9 @@ p {
   .mail-container {
     justify-content: center;
   }
+  .footer-rights {
+    margin-top: -12px;
+  }
 
   .lastPara {
     margin-left: 10px;
@@ -1141,10 +1361,20 @@ p {
   }
 }
 @media (max-width: 430px) {
-  section,
+  main,
+  footer {
+    padding: 33px 32px 30px 32px;
+  }
+  section {
+    padding: 50px 32px 40px 32px;
+  }
+  .home-text-margin {
+    margin-top: 83px;
+  }
+  /* section,
   footer {
     padding: 1rem !important;
-  }
+  } */
   .grid-bg-css-top {
     background: repeating-linear-gradient(
         to right,
@@ -1163,7 +1393,7 @@ p {
       linear-gradient(45deg, #1c5ab0, #213993);
   }
   .top-box {
-    padding: 30px;
+    padding: 10px;
   }
 
   .sticky-main {
@@ -1195,16 +1425,27 @@ p {
     flex-direction: column;
   }
 
+  .btn-center {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+
   .right-box,
   .right-boxes {
     gap: 0.5rem;
   }
   .section-image {
     width: 300px;
+    margin-bottom: 35px;
   }
 
   .lead {
     font-size: 1rem;
+  }
+
+  .image-container {
+    text-align: center;
   }
 
   .step-content {
@@ -1269,16 +1510,22 @@ p {
   .mail-container {
     height: auto;
   }
+  .email-img {
+    width: 45px;
+  }
+  .footer-rights {
+    margin-top: -5px;
+  }
   .footer-line {
     padding: 0;
   }
 }
 
-@media (max-width: 375px) {
-  section,
+@media (max-width: 380px) {
+  /* section,
   footer {
     padding: 1rem !important;
-  }
+  } */
   .step-card {
     height: 225px;
   }
@@ -1287,6 +1534,9 @@ p {
   }
   .section-image {
     width: 250px;
+  }
+  .stat-icon {
+    width: 60px;
   }
 }
 
@@ -1321,4 +1571,3 @@ p {
     margin-top: 1.5rem;
   }
 }
-
