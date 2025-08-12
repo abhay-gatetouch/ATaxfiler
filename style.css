@@ -159,8 +159,6 @@ section {
   border-radius: 8px;
 }
 
-/* Button enhancements */
-
 .btn {
   font-size: 1.25rem;
 }
@@ -182,11 +180,12 @@ section {
   padding: 15px 15px 15px 65px !important;
 }
 
-.btn-primary:hover {
-  background-color: var(--secondary-color);
-  border-color: var(--secondary-color);
-  transform: translateY(-2px);
+.btn-primary:hover,
+.get-started-btn:hover {
+  background-color: #0a58ca;
+  transform: translateY(-1px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: white;
 }
 
 .btn-light {
@@ -194,7 +193,6 @@ section {
   font-weight: 600 !important;
 }
 
-/* Typography enhancements */
 .h1-font {
   font-size: 60px;
   color: white;
@@ -203,8 +201,6 @@ section {
 .hero-image {
   width: 650px;
 }
-
-/* Typography */
 
 p {
   font-weight: 300;
@@ -280,7 +276,6 @@ p {
 }
 
 .section-image {
-  /* background: #f5f7fa; */
   max-width: 800px;
   width: 850px;
 }
@@ -320,7 +315,7 @@ p {
 }
 
 .step-card p {
-  font: normal normal 100 18px/25px sans-serif;
+  font-size: 18px;
 }
 
 .icon-box {
@@ -470,16 +465,9 @@ p {
   content: "Show Less";
 }
 
-/* Fifth Section - Contact */
-.fifth {
-  background-color: #fff;
-  /* font-family: "Segoe UI", sans-serif; */
-}
-
 /* Contact Form */
 .contact-form {
   background: #f5f7fa;
-  /* max-width: 700px; */
   margin: 0 auto;
 }
 
@@ -528,7 +516,6 @@ p {
 
 /* Contact Details */
 .contact-details {
-  /* max-width: 500px; */
   margin: 0 auto;
 }
 
@@ -561,20 +548,8 @@ p {
   font-size: 25px;
 }
 
-/* Buttons */
-.btn-primary {
-  background-color: #213993;
-  border: none;
-  transition: all 0.3s ease;
-}
-
 .submit-btn {
   padding: 0.5rem 1rem !important;
-}
-
-.btn-primary:hover {
-  background-color: #0067dd;
-  transform: translateY(-2px);
 }
 
 .payment-images {
@@ -631,7 +606,6 @@ p {
   transition: 0.3s ease;
 }
 
-/* old  */
 .social-icons a {
   margin-right: 12px;
   font-size: 3.5rem;
@@ -639,12 +613,10 @@ p {
   color: #fff;
 }
 
-/* .square-img {
-  width: 40px;
-  height: 40px;
-  object-fit: cover;
-  border-radius: 0;
-} */
+.social-icons a:hover img,
+.social-icons a:hover i {
+  transform: scale(1.1);
+}
 
 .list-unstyled li a {
   line-height: 2.2;
@@ -655,14 +627,11 @@ p {
 .mail-container {
   display: flex;
   justify-content: flex-end;
-  /* Horizontal: right */
   align-items: flex-end;
-  /* Vertical: bottom */
   height: 275px;
 }
 
 .mail-p {
-  font: normal;
   font-weight: 600;
   font-size: 18px;
   word-spacing: 0;
@@ -786,15 +755,12 @@ p {
   .section-image {
     width: 600px;
   }
-  .footer-logo {
-    width: 250px;
-  }
 
   .footer-row {
     gap: 4.5rem;
   }
   .footer-logo {
-    width: 325px;
+    width: 300px;
   }
   .footer-para {
     font-size: 19px;
@@ -810,6 +776,9 @@ p {
 @media (max-width: 1300px) {
   .logo {
     margin-left: 0 !important;
+  }
+  .steps-container {
+    transform: scale(0.8);
   }
 }
 @media (max-width: 1200px) {
@@ -843,15 +812,14 @@ p {
       ),
       linear-gradient(45deg, #1778c9, #213993);
   }
-  /* .main-box {
-    padding-left: 2.5rem !important;
-  } */
   .navbar {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 1rem 1rem;
   }
   .home-right-text {
     line-height: 1;
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
   .h1-font {
     font-size: 38px;
@@ -883,6 +851,7 @@ p {
   }
   .home-text-margin {
     margin-top: 103px;
+    padding: 0 !important;
   }
   .right-box {
     gap: 0;
@@ -896,9 +865,6 @@ p {
   }
   .hero-image {
     width: 350px;
-  }
-  .box-heading {
-    /* padding: 0 1rem; */
   }
   .content {
     padding: 3rem;
@@ -918,9 +884,6 @@ p {
   .img-width {
     width: 100px !important;
   }
-  .home-text-margin {
-    padding: 0 !important;
-  }
   .homePara {
     font-size: 18px;
   }
@@ -929,13 +892,8 @@ p {
     width: 25px;
   }
 
-  .home-right-text {
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-
   .step-card p {
-    font: normal normal 100 15px / 25px sans-serif;
+    font-size: 15px;
   }
   .navbar-nav {
     gap: 1rem;
@@ -979,10 +937,9 @@ p {
     height: 40px;
     width: 40px;
   }
-  /* .description {
-    padding-right: 1rem !important;
-    padding-left: 1rem !important;
-  } */
+  .payment-images {
+    transform: scale(1);
+  }
   .footer-logo {
     width: 250px;
   }
@@ -1005,12 +962,13 @@ p {
   .newsletter-box input {
     padding-right: 6rem;
     padding-left: 15px;
+    font-size: medium;
   }
   .mail-container {
     height: 95px;
   }
-  .newsletter-box input {
-    font-size: medium;
+  .mail-p {
+    font-size: 15px;
   }
   .email-img {
     width: 50px;
@@ -1024,13 +982,6 @@ p {
 }
 
 @media (max-width: 992px) {
-  /* main,
-  footer {
-    padding: 62px 47px 50px 96px;
-  }
-  section {
-    padding: 50px 47px 40px 96px;
-  } */
   .grid-bg-css-top {
     background: repeating-linear-gradient(
         to right,
@@ -1047,6 +998,9 @@ p {
         transparent 30px
       ),
       linear-gradient(45deg, #1b63b7, #213993);
+  }
+  .first {
+    padding-bottom: 0rem;
   }
   .home-text-margin {
     margin-top: 70px;
@@ -1125,6 +1079,9 @@ p {
     flex-direction: column;
     text-align: center;
   }
+  .steps-container {
+    transform: scale(1);
+  }
 
   .step-card {
     min-width: 80%;
@@ -1154,6 +1111,10 @@ p {
     justify-content: center !important;
   }
 
+  .footer-row {
+    gap: 0.5em;
+  }
+
   .footer-links-box {
     justify-content: space-between !important;
   }
@@ -1181,13 +1142,6 @@ p {
       linear-gradient(45deg, #1871c3, #213993);
   }
 
-  /* .main-box {
-    padding-left: 1rem !important;
-  } */
-  /* section,
-  footer {
-    padding: 2.5rem !important;
-  } */
   main,
   footer {
     padding: 62px 76px 50px 65px;
@@ -1227,9 +1181,7 @@ p {
     font-size: 1.25rem;
     margin: 1px;
   }
-  .first {
-    padding-bottom: 0rem;
-  }
+
   .homePara {
     font-size: 1.1rem;
   }
@@ -1243,7 +1195,7 @@ p {
     align-items: center;
   }
   .main-margin {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
   }
 
   .section-image {
@@ -1277,14 +1229,6 @@ p {
   .home-right-text h4 {
     font-size: 1.5rem;
   }
-  .steps-container {
-    transform: scale(1);
-  }
-
-  .stat-icon {
-    /* width: 50px; */
-    /* height: 50px; */
-  }
 
   .icon-box {
     height: 120px;
@@ -1296,6 +1240,9 @@ p {
   }
   .features-list li {
     font-size: 18px;
+  }
+  .step-content h5 {
+    font-size: 1rem;
   }
 
   /* fifth section  */
@@ -1335,6 +1282,19 @@ p {
   }
 }
 
+@media (max-width: 720px) {
+  .btn-center {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .image-container {
+    text-align: center;
+  }
+  .content {
+    padding: 0;
+  }
+}
 @media (max-width: 576px) {
   .grid-bg-css-top {
     background: repeating-linear-gradient(
@@ -1353,11 +1313,46 @@ p {
       ),
       linear-gradient(45deg, #1b5eb3, #213993);
   }
+
   .icon-box {
-    height: 165px;
+    height: 180px;
   }
   .step-card {
-    height: 165px;
+    height: 180px;
+  }
+  .stat-icon {
+    width: 50px;
+  }
+  .home-right-text h4 {
+    font-size: 1.2rem;
+  }
+  .home-right-text span {
+    font-size: 10px;
+  }
+  .toggle-btn {
+    font-size: 1.1rem;
+  }
+  .contact-form .form-check-label {
+    font-size: 1rem;
+  }
+  .payment-logo {
+    width: 70%;
+  }
+  .form-check-label {
+    margin-top: 5px;
+  }
+  .social-icons a {
+    font-size: 2.5rem;
+  }
+  .mail-container {
+    height: 65px;
+  }
+  .email-img {
+    width: 50px;
+  }
+
+  .footer-rights {
+    margin-top: 3px;
   }
 }
 @media (max-width: 430px) {
@@ -1369,12 +1364,8 @@ p {
     padding: 50px 32px 40px 32px;
   }
   .home-text-margin {
-    margin-top: 83px;
+    margin-top: 70px;
   }
-  /* section,
-  footer {
-    padding: 1rem !important;
-  } */
   .grid-bg-css-top {
     background: repeating-linear-gradient(
         to right,
@@ -1425,12 +1416,6 @@ p {
     flex-direction: column;
   }
 
-  .btn-center {
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-  }
-
   .right-box,
   .right-boxes {
     gap: 0.5rem;
@@ -1466,7 +1451,7 @@ p {
   }
 
   .step-card p {
-    font: normal normal 100 15px / 25px sans-serif;
+    font-size: 15px;
   }
 
   .step-card h5 {
@@ -1521,11 +1506,7 @@ p {
   }
 }
 
-@media (max-width: 380px) {
-  /* section,
-  footer {
-    padding: 1rem !important;
-  } */
+@media (max-width: 390px) {
   .step-card {
     height: 225px;
   }
