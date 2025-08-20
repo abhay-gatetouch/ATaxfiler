@@ -247,7 +247,7 @@ p {
 
 .img-width {
   background-color: #fff;
-  width: 170px !important;
+  width: 170px;
 }
 
 .home-right-text {
@@ -765,6 +765,9 @@ p {
   .stat-icon {
     width: 65px;
   }
+  .img-width {
+    width: 150px;
+  }
   .home-right-text span {
     font-size: 12px;
   }
@@ -869,7 +872,7 @@ p {
   }
   .sticky-main {
     padding-left: 48px;
-    padding-right: 48px;
+    padding-right: 47px;
   }
   .navbar {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -909,7 +912,7 @@ p {
     font-size: 12px !important;
   }
   .home-text-margin {
-    margin-top: 103px;
+    margin-top: 72px;
     padding: 0 !important;
   }
   .right-box {
@@ -1203,10 +1206,13 @@ p {
 
   main,
   footer {
-    padding: 62px 76px 50px 65px;
+    padding: 62px 47px 50px 61px;
   }
   section {
-    padding: 50px 76px 40px 65px;
+    padding: 50px 47px 40px 61px;
+  }
+  .sticky-main {
+    padding-left: 61px;
   }
 
   .nav-flex-column {
@@ -1411,7 +1417,7 @@ p {
   }
 
   .footer-rights {
-    margin-top: 3px;
+    margin-top: -2px;
   }
 }
 @media (max-width: 439px) {
@@ -1423,7 +1429,7 @@ p {
     padding: 50px 32px 40px 32px;
   }
   .sticky-main {
-    padding-left: 30px;
+    padding-left: 32px;
     padding-right: 35px;
   }
   .home-text-margin {
