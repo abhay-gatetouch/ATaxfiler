@@ -685,7 +685,7 @@ p {
 }
 
 /* Media Query */
-@media (max-width: 1440px) {
+@media (max-width: 1500px) {
   .grid-bg-css-top {
     background: repeating-linear-gradient(
         to right,
@@ -715,7 +715,7 @@ p {
     font-size: 48px;
   }
   .box-heading p {
-    font-size: 1.1rem;
+    font-size: 18px;
   }
   .content {
     padding: 5rem;
@@ -727,7 +727,7 @@ p {
     font-size: 30px;
   }
   .lead {
-    font-size: 1.38rem;
+    font-size: 1.25rem;
   }
   .lead-bold {
     font-size: 1.4rem;
@@ -743,14 +743,17 @@ p {
     font-size: 2.3rem;
   }
   .contact-details p {
-    font-size: 1.5rem;
+    font-size: 22px;
+  }
+  .contact-info span {
+    font-size: 18px;
   }
 
   .hero-image {
     width: 450px;
   }
   .homePara {
-    font-size: 1.2rem;
+    font-size: 18px;
   }
   .section-image {
     width: 600px;
@@ -779,6 +782,9 @@ p {
   }
   .steps-container {
     transform: scale(0.8);
+  }
+  .section-image {
+    width: 530px;
   }
 }
 @media (max-width: 1200px) {
