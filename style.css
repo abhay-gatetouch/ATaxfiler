@@ -97,6 +97,8 @@ section {
   height: calc(100vh - 100vh);
   top: 10px;
   z-index: 1000;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 #main {
@@ -276,8 +278,7 @@ p {
 }
 
 .section-image {
-  max-width: 800px;
-  width: 850px;
+  max-width: 700px;
 }
 
 .content h3 {
@@ -315,7 +316,7 @@ p {
 }
 
 .step-card p {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .icon-box {
@@ -325,22 +326,35 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 20px;
   flex-shrink: 0;
 }
 
 .right-radius {
-  border-top-right-radius: 20px !important;
-  border-bottom-right-radius: 20px !important;
+  padding-right: 25px;
+  border-top-right-radius: 30px !important;
+  border-bottom-right-radius: 30px !important;
   border-top-left-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
 }
 
 .left-radius {
+  padding-left: 25px;
   border-top-right-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
-  border-top-left-radius: 20px !important;
-  border-bottom-left-radius: 20px !important;
+  border-top-left-radius: 30px !important;
+  border-bottom-left-radius: 30px !important;
+}
+
+.text-right {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.text-left {
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 
 .up {
@@ -356,7 +370,7 @@ p {
 .lead {
   letter-spacing: 2px;
   word-spacing: 1px;
-  font-size: 2rem;
+  font-size: 28px;
   line-height: 1.4;
 }
 
@@ -684,8 +698,18 @@ p {
   margin-top: 42px;
 }
 
+@media (max-width: 1600px) {
+}
+
 /* Media Query */
-@media (max-width: 1500px) {
+@media (max-width: 1650px) {
+  section {
+    padding: 50px 110px 40px 123px;
+  }
+  main,
+  footer {
+    padding: 57px 110px 50px 123px;
+  }
   .grid-bg-css-top {
     background: repeating-linear-gradient(
         to right,
@@ -702,6 +726,12 @@ p {
         transparent 30px
       ),
       linear-gradient(45deg, #167fcf, #213993);
+  }
+  .navbar {
+    padding: 1rem 1rem;
+  }
+  .logo {
+    width: 180px;
   }
 
   .first {
@@ -756,7 +786,10 @@ p {
     font-size: 18px;
   }
   .section-image {
-    width: 600px;
+    width: 550px;
+  }
+  .payment-logo {
+    width: 75%;
   }
 
   .footer-row {
@@ -768,17 +801,30 @@ p {
   .footer-para {
     font-size: 19px;
   }
+  .footer-links-box {
+    margin-left: 20px;
+  }
   .mail-container {
     height: 155px;
   }
   .footer-rights {
-    margin-top: 38px;
+    margin-top: 44px;
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1330px) {
   .logo {
     margin-left: 0 !important;
+    width: 160px;
+  }
+  .cstm-btn {
+    padding: 12px 12px 12px 50px !important;
+  }
+  .btn {
+    font-size: 16px;
+  }
+  .navbar-nav {
+    gap: 1rem;
   }
   .steps-container {
     transform: scale(0.8);
@@ -786,14 +832,17 @@ p {
   .section-image {
     width: 530px;
   }
+  .footer-links-box {
+    margin-left: 0;
+  }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1250px) {
   .step-card {
     min-width: 400px;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1224px) {
   main,
   footer {
     padding: 62px 96px 50px 96px;
@@ -817,6 +866,10 @@ p {
         transparent 30px
       ),
       linear-gradient(45deg, #1778c9, #213993);
+  }
+  .sticky-main {
+    padding-left: 48px;
+    padding-right: 48px;
   }
   .navbar {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -987,7 +1040,7 @@ p {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1000px) {
   .grid-bg-css-top {
     background: repeating-linear-gradient(
         to right,
@@ -1129,7 +1182,7 @@ p {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 779px) {
   .grid-bg-css-top {
     background: repeating-linear-gradient(
         to right,
@@ -1288,7 +1341,7 @@ p {
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 729px) {
   .btn-center {
     display: flex !important;
     justify-content: center;
@@ -1301,7 +1354,7 @@ p {
     padding: 0;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 590px) {
   .grid-bg-css-top {
     background: repeating-linear-gradient(
         to right,
@@ -1361,13 +1414,17 @@ p {
     margin-top: 3px;
   }
 }
-@media (max-width: 430px) {
+@media (max-width: 439px) {
   main,
   footer {
     padding: 33px 32px 30px 32px;
   }
   section {
     padding: 50px 32px 40px 32px;
+  }
+  .sticky-main {
+    padding-left: 30px;
+    padding-right: 35px;
   }
   .home-text-margin {
     margin-top: 70px;
@@ -1414,6 +1471,9 @@ p {
   .h1-font {
     font-size: 2rem;
   }
+  .homePara {
+    font-size: 15px;
+  }
   .hero-image {
     max-width: 250px;
   }
@@ -1432,7 +1492,7 @@ p {
   }
 
   .lead {
-    font-size: 1rem;
+    font-size: 15px;
   }
 
   .image-container {
@@ -1512,7 +1572,7 @@ p {
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 399px) {
   .step-card {
     height: 225px;
   }
@@ -1527,14 +1587,14 @@ p {
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 369px) {
   .right-box {
     flex-direction: column !important;
     gap: 2rem;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 329px) {
   .hero-image {
     max-width: 250px;
   }
