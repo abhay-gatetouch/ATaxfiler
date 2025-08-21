@@ -17,13 +17,15 @@
 </head>
 
 <body>
+
   <div id="home" class="grid-bg-css-top top-box"></div>
+
   <div class="sticky-main">
-    <nav class="nav-bg navbar navbar-expand-lg bg-white rounded-pill border px-5  flex-md-column px-0">
-      <div class="container-fluid nav-flex-column nav-padding px-0">
+    <nav class="nav-bg navbar navbar-expand-lg bg-white rounded-pill border px-5  flex-md-column">
+      <div class="container-fluid nav-flex-column">
 
         <a class="navbar-brand" href="#">
-          <img width="200px" class="logo ms-md-3" src="./images/logo.svg" alt="Tax Assist Logo" />
+          <img class="logo ms-md-3" src="./images/logo.svg" alt="Tax Assist Logo" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent"
           aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,8 +39,8 @@
             </li>
 
             <li class="nav-item dropdown">
-              <a href="#services" class="nav-link dropdown-toggle" id="servicesDropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+              <a href="#" class="nav-link dropdown-toggle" id="servicesDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false" aria-haspopup="true">
                 Services
               </a>
 
@@ -79,7 +81,7 @@
 
           <div class="d-flex flex-column flex-lg-row align-items-center gap-3">
             <a class="nav-link" href="#">Login</a>
-            <a class="cstm-btn btn btn-primary rounded-pill d-flex justify-content-center align-items-center" href="#">
+            <a class=" btn btn-primary rounded-pill d-flex justify-content-center align-items-center" href="#">
               Get Started
               <img class="btn-img ms-3" src="./images/btn icon.svg" alt="" />
             </a>
@@ -89,64 +91,62 @@
     </nav>
   </div>
 
-  <div class="grid-bg-css first container-fluid d-flex flex-column">
-    <main id="main" class="flex-grow-1 d-flex main-margin">
-      <div class="w-100">
-        <div class="main-box">
-          <div class="row">
-            <div class="col-lg-6 text-white text-start home-text-margin">
-              <h1 class="display-4 h1-font fw-bold">
-                SIMPLIFYING MAKING TAX DIGITAL FOR INCOME TAX SELF ASSESSMENT
-              </h1>
-              <p class="homePara my-4">
-                Easily manage your digital tax records, submit quarterly
-                updates, and stay fully compliant with HMRC's Making Tax
-                Digital for Income Tax rules, all in one simple platform using
-                @A1Taxfiler.
-              </p>
-              <div class="d-flex btn-center">
-                <a class="btn btn-light flex-wrap rounded-pill text-dark d-flex justify-content-center align-content-center"
-                  href="#">
-                  Start Filing Today
-                  <img class="home-btn-img ms-2" src="./images/btn icon blue.svg" alt="" />
-                </a>
-              </div>
+  <div class="grid-bg-css first d-flex flex-column">
+    <main class="container flex-grow-1 d-flex main-margin">
+      <div class="main-box">
+        <div class="row">
+          <!-- Left Side -->
+          <div class="col-lg-6 text-white text-start home-text-margin">
+            <h1 class="h1-font fw-bold">
+              SIMPLIFYING MAKING TAX DIGITAL FOR INCOME TAX SELF ASSESSMENT
+            </h1>
+            <p class="homePara my-4">
+              Easily manage your digital tax records, submit quarterly updates,
+              and stay fully compliant with HMRC's Making Tax Digital for
+              Income Tax rules, all in one simple platform using @A1Taxfiler.
+            </p>
+            <div class="d-flex btn-center">
+              <a class="btn btn-light flex-wrap rounded-pill text-dark d-flex justify-content-center align-content-center"
+                href="#">
+                Start Filing Today
+                <img class="home-btn-img ms-2" src="./images/btn icon blue.svg" alt="" />
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Side -->
+          <div class="col-lg-6 mt-4">
+            <!-- Hero Image -->
+            <div class="text-center">
+              <img class="img-fluid hero-image" src="./images/home-image-removebg-preview.png"
+                alt="Tax expert illustration" />
             </div>
 
-            <div class="col-lg-6 px-0 mt-4">
-              <!-- Hero Image -->
-              <div class="text-center">
-                <img class="img-fluid hero-image's" src="./images/home-image-removebg-preview.png"
-                  alt="Tax expert illustration" />
-                <!-- <img class="img-fluid hero-image" src="./images/OIP.webp" alt="Tax expert illustration"> -->
+            <div class="home-right-text d-flex justify-content-center align-items-center text-white gap-4 mt-4">
+              <!-- Block 1 -->
+              <div class="right-boxes d-flex align-items-center gap-3 text-start">
+                <img src="./images/certificate-icon-logo-design-png.webp" alt="Return submitted icon"
+                  class="stat-icon img-fluid" />
+                <div>
+                  <h4><strong>125,000</strong></h4>
+                  <span>Returns Submitted</span>
+                </div>
               </div>
 
-              <!-- Stats Section -->
-              <div class="home-right-text d-flex justify-content-center align-items-center text-white gap-4 mt-4">
-                <div class="right-box d-flex flex-row justify-content-center align-items-start text-white">
-                  <!-- Block 1 -->
-                  <div class="right-boxes d-flex align-items-center gap-3 text-start">
-                    <img src="./images/record.svg" alt="Return submitted icon" class="stat-icon img-fluid" />
-                    <div class="">
-                      <h4><strong>125,000</strong></h4>
-                      <span>Returns Submitted</span>
-                    </div>
-                  </div>
-
-                  <!-- Block 2 -->
-                  <div class="right-boxes d-flex align-items-center gap-3 text-start">
-                    <img src="./images/review and sumit.svg" alt="HMRC recognised icon" class="stat-icon img-fluid" />
-                    <div class="">
-                      <h4><strong>HMRC</strong></h4>
-                      <span>Recognised</span>
-                    </div>
-                  </div>
+              <!-- Block 2 -->
+              <div class="right-boxes d-flex align-items-center gap-3 text-start">
+                <img src="./images/tax-image-removebg-preview.png" alt="HMRC recognised icon"
+                  class="text-white stat-icon img-fluid" />
+                <div>
+                  <h4><strong>HMRC</strong></h4>
+                  <span>Recognised</span>
                 </div>
+              </div>
 
-                <!-- Block 3 -->
-                <div class="d-flex align-items-center gap-3 text-start">
-                  <img src="./images/paypal.png" alt="Signup icon" class="img-width stat-icon img-fluid" />
-                </div>
+              <!-- Block 3 -->
+              <div class="d-flex align-items-center gap-3 text-start">
+                <img src="./images/trustpilot-logo-png-transparent-png_123-removebg-preview.png" alt="Signup icon"
+                  class="img-width img-fluid" />
               </div>
             </div>
           </div>
@@ -154,6 +154,7 @@
       </div>
     </main>
   </div>
+
 
   <section id="how-it-works" class="second bg-white">
     <div class="box">
@@ -172,14 +173,14 @@
         <div class="grid-section d-flex align-items-center">
           <div class="container-fluid">
             <div class="row align-items-center">
-              <div class="col-md-6 px-0">
+              <div class="col-md-5">
                 <div class="image-container">
                   <img class="img-fluid section-image" src="./images/tax expert.png" alt="Tax Expert" />
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-7">
                 <div class="content">
-                  <h3 class="display-4 fw-bold mb-2 mb-lg-4">
+                  <h3 class="fw-bold mb-2 mb-lg-4">
                     YOU DON'T NEED TO BE A TAX EXPERT
                   </h3>
                   <p class="lead mb-4">
@@ -188,8 +189,7 @@
                     professional.
                   </p>
                   <div class="d-flex btn-center btn-inline">
-                    <a class="cstm-btn btn btn-primary rounded-pill d-flex justify-content-center align-items-center"
-                      href="#">
+                    <a class=" btn btn-primary rounded-pill d-flex justify-content-center align-items-center" href="#">
                       Get Started
                       <img class="btn-img ms-3" src="./images/btn icon.svg" alt="" />
                     </a>
@@ -204,19 +204,19 @@
         <div class="grid-section d-flex align-items-center">
           <div class="container-fluid">
             <div class="row align-items-center">
-              <div class="col-md-6 order-md-2 px-0">
-                <div class="image-container">
+              <div class="col-md-5 order-md-2">
+                <div class="image-container text-end">
                   <img class="img-fluid section-image" src="./images/FAST. RELIABLE..png"
                     alt="Fast Reliable Illustration" />
                 </div>
               </div>
-              <div class="col-md-6 order-md-1">
+              <div class="col-md-7 order-md-1">
                 <div class="content ps-0">
-                  <h3 class="display-6 fw-bold mb-0">FAST. RELIABLE.</h3>
-                  <h3 class="display-4 fw-bold mb-2 mb-lg-4">
+                  <h3 class="fw-bold mb-0">FAST. RELIABLE.</h3>
+                  <h3 class="fw-bold mb-2 mb-lg-4">
                     BUILT FOR BUSY LIVES.
                   </h3>
-                  <p class=" lead mb-4">
+                  <p class="lead mb-4">
                     From April 2026, landlords and self-employed individuals
                     earning over £50,000 annually must keep digital records
                     and submit quarterly updates to HMRC under Making Tax
@@ -227,8 +227,7 @@
                     accurate, and stress-free for you.
                   </p>
                   <div class="d-flex btn-center btn-inline">
-                    <a class="cstm-btn btn btn-primary rounded-pill d-flex justify-content-center align-items-center"
-                      href="#">
+                    <a class=" btn btn-primary rounded-pill d-flex justify-content-center align-items-center" href="#">
                       Get Started
                       <img class="btn-img ms-3" src="./images/btn icon.svg" alt="" />
                     </a>
@@ -243,9 +242,9 @@
         <div class="grid-section d-flex align-items-center">
           <div class="container-fluid">
             <div class="row align-items-center">
-              <div class="col-lg-6  mb-3 mb-lg-5">
-                <div class="content ps-0">
-                  <h3 class="display-4 fw-bold mb-2 mb-lg-4">
+              <div class="col-lg-5 col-xl-6  mb-3 mb-lg-5">
+                <div class="content ps-0 pe-lg-4">
+                  <h3 class="fw-bold mb-2 mb-lg-4">
                     STEPWISE GUIDANCE FOR REGISTRATION
                   </h3>
                   <p class="lead mb-4">
@@ -263,7 +262,7 @@
                 </div>
               </div>
 
-              <div class="col-lg-6 px-0">
+              <div class="col-lg-7 col-xl-6">
                 <div class="steps-container">
                   <!-- Step 1 -->
                   <div class="step-item gap-1">
@@ -301,10 +300,10 @@
 
                   <!-- Step 3 -->
                   <div class="step-item gap-1">
-                    <div class="icon-box down left-radius">
+                    <div class="icon-box down left-radius icon-box-3">
                       <img src="./images/record.svg" class="img-fluid" alt="icon" />
                     </div>
-                    <div class="step-card right-radius text-right">
+                    <div class="step-card right-radius text-right step-card-3">
                       <div class="step-content">
                         <h5 class="fw-bold">Record Income & Expenses</h5>
                         <p class="mb-0">
@@ -369,14 +368,14 @@
         <div id="vat-filling" class="grid-section d-flex align-items-center min-vh-75">
           <div class="container-fluid">
             <div class="row align-items-center">
-              <div class="col-md-6 px-0">
+              <div class="col-md-5">
                 <div class="image-container">
                   <img class="img-fluid section-image" src="./images/Vat.png" alt="Tax Expert" />
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-7">
                 <div class="content">
-                  <h3 class="display-4 fw-bold mb-2 mb-lg-4">VAT FILING</h3>
+                  <h3 class="fw-bold mb-2 mb-lg-4">VAT FILING</h3>
                   <p class="lead mb-4">
                     Businesses over the VAT threshold or voluntarily
                     registered. We ensure full compliance with MTD for VAT and
@@ -399,15 +398,15 @@
         <div id="self-employed" class="grid-section d-flex align-items-center">
           <div class="container-fluid">
             <div class="row align-items-center">
-              <div class="col-md-6 order-md-2 px-0">
-                <div class="image-container">
+              <div class="col-md-5 order-md-2">
+                <div class="image-container text-end">
                   <img class="img-fluid section-image" src="./images/Self Emploee.png"
                     alt="Fast Reliable Illustration" />
                 </div>
               </div>
-              <div class="col-md-6 order-md-1">
+              <div class="col-md-7 order-md-1">
                 <div class="content ps-0">
-                  <h3 class="display-6 fw-bold">SELF EMPLOYED</h3>
+                  <h3 class="fw-bold">SELF EMPLOYED</h3>
                   <p class="lead mb-4">
                     If you are self employed with £50,000 qualifying income
                     for the 2024 to 2025 tax year, then you must use
@@ -432,14 +431,14 @@
         <div id="landlord" class="grid-section d-flex align-items-center min-vh-75">
           <div class="container-fluid">
             <div class="row align-items-center">
-              <div class="col-md-6 px-0">
+              <div class="col-md-5">
                 <div class="image-container">
                   <img class="img-fluid section-image" src="./images/landlord.png" alt="Tax Expert" />
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-7">
                 <div class="content">
-                  <h3 class="display-4 fw-bold mb-2 mb-lg-4">LANDLORD</h3>
+                  <h3 class="fw-bold mb-2 mb-lg-4">LANDLORD</h3>
                   <p class="lead mb-4">
                     If you are a landlord with £50,000 qualifying income for
                     the 2024 to 2025 tax year, then you must use @A1Taxfiler
@@ -464,14 +463,14 @@
         <div id="accountants" class="grid-section d-flex align-items-center">
           <div class="container-fluid">
             <div class="row align-items-center">
-              <div class="col-md-6 order-md-2 px-0">
-                <div class="image-container">
+              <div class="col-md-5 order-md-2">
+                <div class="image-container text-end">
                   <img class="img-fluid section-image" src="./images/accountant.png" alt="Fast Reliable Illustration" />
                 </div>
               </div>
-              <div class="col-md-6 order-md-1">
+              <div class="col-md-7 order-md-1">
                 <div class="content ps-0">
-                  <h3 class="display-4 fw-bold mb-2 mb-lg-4">ACCOUNTANTS</h3>
+                  <h3 class="fw-bold mb-2 mb-lg-4">ACCOUNTANTS</h3>
                   <p class="lead mb-4">
                     If you're an accountant, bookkeeper, or tax professional
                     submitting quarterly updates, @A1Taxfiler is the
@@ -761,7 +760,7 @@
                   placeholder="About business"></textarea>
               </div>
               <div class="form-check mb-4 d-flex align-items-start gap-3">
-                <input id="terms" name="terms" class="form-check-input mt-2 rounded-0" type="checkbox" />
+                <input id="terms" name="terms" class="form-check-input rounded-0" type="checkbox" />
                 <label class="form-check-label" for="terms">
                   I accept the terms and conditions
                 </label>
@@ -848,7 +847,7 @@
     <div class="container-fluid h-100 d-flex flex-column justify-content-between py-3">
       <div class="row footer-row">
         <!-- Logo + Description -->
-        <div class="col-xl-4 col-lg-5 description mb-3 mb-lg-">
+        <div class="col-xl-5 col-lg-5 description mb-3 mb-lg-">
           <img class="footer-logo img-fluid mb-3" src="./images/logo footer svg.svg" alt="Logo" />
           <p class="footer-para">
             @ATaxfiler provides Making Tax Digital (MTD) solutions tailored
@@ -860,9 +859,9 @@
           </p>
           <div class="social-icons mt-3">
             <a href="#"><img src="./images/x.svg" alt="" /></a>
-            <a href="#"><img class="square-img" src="./images/facebook.svg" alt="" /></a>
+            <a href="#"><img src="./images/facebook.svg" alt="" /></a>
             <a href="#"><img src="./images/instagram.svg" alt="" /></a>
-            <a href="#"><i class="bi bi-linkedin rounded-5"></i></a>
+            <a href="#"><img src="./images/linkedin-logo.png" class="bg-white linkedin-logo" alt="" /></a>
           </div>
         </div>
 
@@ -870,7 +869,7 @@
           <div class="footer-links-box d-flex flex-column flex-sm-row justify-content-around mt-lg-3">
             <!-- Services -->
             <div class="">
-              <h5 class=" fw-bold">Services</h5>
+              <h5 class="fw-bold">Services</h5>
               <ul class="list-unstyled me-lg-4">
                 <li><a href="#vat-filling">VAT Filing</a></li>
                 <li><a href="#self-employed">MTD for Self Employment</a></li>
@@ -940,6 +939,21 @@
         btn.textContent = "Show More";
       });
     });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        const navbarHeight = document.querySelector('.navbar').offsetHeight + 10;
+        const elementPosition = target.offsetTop - navbarHeight;
+
+        window.scrollTo({
+          top: elementPosition,
+          behavior: "smooth"
+        });
+      });
+    });
+
   </script>
 </body>
 
