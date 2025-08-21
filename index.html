@@ -21,74 +21,76 @@
   <div id="home" class="grid-bg-css-top top-box"></div>
 
   <div class="sticky-main">
-    <nav class="nav-bg navbar navbar-expand-lg bg-white rounded-pill border px-5  flex-md-column">
-      <div class="container-fluid nav-flex-column">
+    <div class="container">
+      <nav class="nav-bg navbar navbar-expand-lg bg-white rounded-pill border px-5  flex-md-column">
+        <div class="container-fluid nav-flex-column">
 
-        <a class="navbar-brand" href="#">
-          <img class="logo ms-md-3" src="./images/logo.svg" alt="Tax Assist Logo" />
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent"
-          aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <a class="navbar-brand" href="#">
+            <img class="logo ms-md-3" src="./images/logo.svg" alt="Tax Assist Logo" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent"
+            aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <div class="collapse navbar-collapse nav-flex-column" id="navContent">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#home">Home</a>
-            </li>
+          <div class="collapse navbar-collapse nav-flex-column" id="navContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
 
-            <li class="nav-item dropdown">
-              <a href="#" class="nav-link dropdown-toggle" id="servicesDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false" aria-haspopup="true">
-                Services
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="servicesDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+                  Services
+                </a>
+
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="servicesDropdown">
+                  <li>
+                    <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#vat-filling">
+                      <i class="bi bi-calculator"></i> VAT Filing
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#self-employed">
+                      <i class="bi bi-person-badge"></i> Self-Employed
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#landlord">
+                      <i class="bi bi-house-door"></i> Landlord
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#accountants">
+                      <i class="bi bi-people"></i> Accountants
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#how-it-works">How it Works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pricing">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+
+            <div class="d-flex flex-column flex-lg-row align-items-center gap-3">
+              <a class="nav-link" href="#">Login</a>
+              <a class=" btn btn-primary rounded-pill d-flex justify-content-center align-items-center" href="#">
+                Get Started
+                <img class="btn-img ms-3" src="./images/btn icon.svg" alt="" />
               </a>
-
-              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="servicesDropdown">
-                <li>
-                  <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#vat-filling">
-                    <i class="bi bi-calculator"></i> VAT Filing
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#self-employed">
-                    <i class="bi bi-person-badge"></i> Self-Employed
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#landlord">
-                    <i class="bi bi-house-door"></i> Landlord
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#accountants">
-                    <i class="bi bi-people"></i> Accountants
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#how-it-works">How it Works</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#pricing">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-
-          <div class="d-flex flex-column flex-lg-row align-items-center gap-3">
-            <a class="nav-link" href="#">Login</a>
-            <a class=" btn btn-primary rounded-pill d-flex justify-content-center align-items-center" href="#">
-              Get Started
-              <img class="btn-img ms-3" src="./images/btn icon.svg" alt="" />
-            </a>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </div>
 
   <div class="grid-bg-css first d-flex flex-column">
@@ -157,21 +159,21 @@
 
 
   <section id="how-it-works" class="second bg-white">
-    <div class="box">
-      <div class="box-heading text-center">
-        <h2 class="heading">NO WORRIES!</h2>
-        <h2 class="heading">EVEN IF IT'S YOUR FIRST TIME FILING WITH MTD</h2>
-        <p class="">
-          We make it simple. @A1Taxfiler guides you through every step with
-          plain English questions,
-        </p>
-        <p>No jargon, No confusing forms, No stress.</p>
-      </div>
+    <div class="container">
+      <div class="box">
+        <div class="box-heading text-center">
+          <h2 class="heading">NO WORRIES!</h2>
+          <h2 class="heading">EVEN IF IT'S YOUR FIRST TIME FILING WITH MTD</h2>
+          <p>
+            We make it simple. @A1Taxfiler guides you through every step with
+            plain English questions,
+          </p>
+          <p>No jargon, No confusing forms, No stress.</p>
+        </div>
 
-      <div class="grid-container">
-        <!-- Block 1 -->
-        <div class="grid-section d-flex align-items-center">
-          <div class="container-fluid">
+        <div class="grid-container">
+          <!-- Block 1 -->
+          <div class="grid-section d-flex align-items-center">
             <div class="row align-items-center">
               <div class="col-md-5">
                 <div class="image-container">
@@ -184,12 +186,12 @@
                     YOU DON'T NEED TO BE A TAX EXPERT
                   </h3>
                   <p class="lead mb-4">
-                    Our intuitive platform makes filing your digital tax
-                    returns simple and stress-free, even if you're not a tax
+                    Our intuitive platform makes filing your digital tax returns
+                    simple and stress-free, even if you're not a tax
                     professional.
                   </p>
                   <div class="d-flex btn-center btn-inline">
-                    <a class=" btn btn-primary rounded-pill d-flex justify-content-center align-items-center" href="#">
+                    <a class="btn btn-primary rounded-pill d-flex justify-content-center align-items-center" href="#">
                       Get Started
                       <img class="btn-img ms-3" src="./images/btn icon.svg" alt="" />
                     </a>
@@ -198,11 +200,9 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Block 2 -->
-        <div class="grid-section d-flex align-items-center">
-          <div class="container-fluid">
+          <!-- Block 2 -->
+          <div class="grid-section d-flex align-items-center">
             <div class="row align-items-center">
               <div class="col-md-5 order-md-2">
                 <div class="image-container text-end">
@@ -213,21 +213,19 @@
               <div class="col-md-7 order-md-1">
                 <div class="content ps-0">
                   <h3 class="fw-bold mb-0">FAST. RELIABLE.</h3>
-                  <h3 class="fw-bold mb-2 mb-lg-4">
-                    BUILT FOR BUSY LIVES.
-                  </h3>
+                  <h3 class="fw-bold mb-2 mb-lg-4">BUILT FOR BUSY LIVES.</h3>
                   <p class="lead mb-4">
                     From April 2026, landlords and self-employed individuals
-                    earning over £50,000 annually must keep digital records
-                    and submit quarterly updates to HMRC under Making Tax
-                    Digital for Income Tax (MTD ITSA).
+                    earning over £50,000 annually must keep digital records and
+                    submit quarterly updates to HMRC under Making Tax Digital
+                    for Income Tax (MTD ITSA).
                   </p>
                   <p class="lead-bold fw-bold mb-4">
                     Our software is designed to make this process seamless,
                     accurate, and stress-free for you.
                   </p>
                   <div class="d-flex btn-center btn-inline">
-                    <a class=" btn btn-primary rounded-pill d-flex justify-content-center align-items-center" href="#">
+                    <a class="btn btn-primary rounded-pill d-flex justify-content-center align-items-center" href="#">
                       Get Started
                       <img class="btn-img ms-3" src="./images/btn icon.svg" alt="" />
                     </a>
@@ -236,13 +234,11 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Block 3 -->
-        <div class="grid-section d-flex align-items-center">
-          <div class="container-fluid">
+          <!-- Block 3 -->
+          <div class="grid-section d-flex align-items-center">
             <div class="row align-items-center">
-              <div class="col-lg-5 col-xl-6  mb-3 mb-lg-5">
+              <div class="col-lg-5 col-xl-6 mb-3 mb-lg-5">
                 <div class="content ps-0 pe-lg-4">
                   <h3 class="fw-bold mb-2 mb-lg-4">
                     STEPWISE GUIDANCE FOR REGISTRATION
@@ -266,15 +262,15 @@
                 <div class="steps-container">
                   <!-- Step 1 -->
                   <div class="step-item gap-1">
-                    <div class="icon-box down left-radius ">
+                    <div class="icon-box down left-radius">
                       <img src="./images/shignup.svg" class="img-fluid" alt="icon" />
                     </div>
                     <div class="step-card right-radius text-right">
                       <div class="step-content">
                         <h5 class="fw-bold">Sign Up & Connect HMRC</h5>
                         <p class="mb-0">
-                          Register your account and securely authorise your
-                          HMRC connection.
+                          Register your account and securely authorise your HMRC
+                          connection.
                         </p>
                       </div>
                     </div>
@@ -288,8 +284,8 @@
                           Create your account with A1Taxfiler
                         </h5>
                         <p class="mb-0">
-                          Sign up in minutes. No complex forms, just your
-                          email and few basic details.
+                          Sign up in minutes. No complex forms, just your email
+                          and few basic details.
                         </p>
                       </div>
                     </div>
@@ -332,15 +328,15 @@
 
                   <!-- Step 5 -->
                   <div class="step-item gap-1">
-                    <div class="icon-box down left-radius ">
+                    <div class="icon-box down left-radius">
                       <img src="./images/conformation.svg" class="img-fluid" alt="icon" />
                     </div>
                     <div class="step-card right-radius text-right">
                       <div class="step-content">
                         <h5 class="fw-bold">Get Confirmation</h5>
                         <p class="mb-0">
-                          Receive instant filing confirmation and digital
-                          proof of your records.
+                          Receive instant filing confirmation and digital proof
+                          of your records.
                         </p>
                       </div>
                     </div>
@@ -349,24 +345,27 @@
               </div>
             </div>
           </div>
+          <!-- End Block 3 -->
         </div>
       </div>
     </div>
   </section>
 
-  <section id="services" class="third bg-white">
-    <div class="box">
-      <div class="box-heading text-center">
-        <h2 class="heading">WHAT WE HELP YOU FILE</h2>
-        <p class="mx-md-5 px-md-5 mt-2">
-          This section should showcase the three main services clearly:
-        </p>
-      </div>
 
-      <div class="grid-container">
-        <!-- Block 1 -->
-        <div id="vat-filling" class="grid-section d-flex align-items-center min-vh-75">
-          <div class="container-fluid">
+  <section id="services" class="third bg-white">
+    <div class="container">
+      <div class="box">
+        <div class="box-heading text-center">
+          <h2 class="heading">WHAT WE HELP YOU FILE</h2>
+          <p class="mx-md-5 px-md-5 mt-2">
+            This section should showcase the three main services clearly:
+          </p>
+        </div>
+
+        <div class="grid-container">
+          <!-- Block 1 -->
+          <div id="vat-filling" class="grid-section d-flex align-items-center min-vh-75">
+            <!-- <div class="container-fluid"> -->
             <div class="row align-items-center">
               <div class="col-md-5">
                 <div class="image-container">
@@ -391,12 +390,12 @@
                 </div>
               </div>
             </div>
+            <!-- </div> -->
           </div>
-        </div>
 
-        <!-- Block 2 -->
-        <div id="self-employed" class="grid-section d-flex align-items-center">
-          <div class="container-fluid">
+          <!-- Block 2 -->
+          <div id="self-employed" class="grid-section d-flex align-items-center">
+            <!-- <div class="container-fluid"> -->
             <div class="row align-items-center">
               <div class="col-md-5 order-md-2">
                 <div class="image-container text-end">
@@ -423,13 +422,13 @@
                   </div>
                 </div>
               </div>
+              <!-- </div> -->
             </div>
           </div>
-        </div>
 
-        <!-- Block 3 -->
-        <div id="landlord" class="grid-section d-flex align-items-center min-vh-75">
-          <div class="container-fluid">
+          <!-- Block 3 -->
+          <div id="landlord" class="grid-section d-flex align-items-center min-vh-75">
+            <!-- <div class="container-fluid"> -->
             <div class="row align-items-center">
               <div class="col-md-5">
                 <div class="image-container">
@@ -455,13 +454,13 @@
                   </div>
                 </div>
               </div>
+              <!-- </div> -->
             </div>
           </div>
-        </div>
 
-        <!-- Block 4 -->
-        <div id="accountants" class="grid-section d-flex align-items-center">
-          <div class="container-fluid">
+          <!-- Block 4 -->
+          <div id="accountants" class="grid-section d-flex align-items-center">
+            <!-- <div class="container-fluid"> -->
             <div class="row align-items-center">
               <div class="col-md-5 order-md-2">
                 <div class="image-container text-end">
@@ -487,6 +486,7 @@
                 </div>
               </div>
             </div>
+            <!-- </div> -->
           </div>
         </div>
       </div>
@@ -494,7 +494,7 @@
   </section>
 
   <section id="pricing" class="forth">
-    <div class="container-fluid">
+    <div class="container">
       <div class="box-heading text-center mb-lg-5">
         <h2 class="heading">PICK YOUR FILING PLAN</h2>
         <p class="mx-md-5 px-md-5">
@@ -503,241 +503,131 @@
         <p>expat tax return and are ready to e-file.</p>
       </div>
 
-      <div class="container-fluid">
-        <div class="row justify-content-center">
-          <!-- Card 1 -->
-          <div class="col-lg-4 col-md-6 cards">
-            <div class="pricing-card h-100 p-lg-4 p-3">
-              <div class="pricing-header">
-                <h3>VAT FILING</h3>
-              </div>
-              <div class="pricing-price">
-                <h3 class="card-header"><strong>£9.95</strong></h3>
-                <strong class="pt-5">Month</strong>
-              </div>
-              <div class="d-flex justify-content-center align-items-center">
-                <a href="#" class="btn get-started-btn">Get started</a>
-              </div>
-              <ul class="list-unstyled features-list mt-4">
-                <li>
-                  <img src="./images/li icon.svg" class="feature-icon" alt="" />
-                  Quarterly Submissions
-                </li>
-                <li>
-                  <img src="./images/li icon.svg" class="feature-icon" alt="" />
-                  Year-End Finalisation
-                </li>
-                <li>
-                  <img src="./images/li icon.svg" class="feature-icon" alt="" />
-                  Digital Record Keeping
-                </li>
-                <li>
-                  <img src="./images/li icon.svg" class="feature-icon" alt="" />
-                  Income & Expense Categorisation
-                </li>
-                <li>
-                  <img src="./images/li icon.svg" class="feature-icon" alt="" />
-                  VAT Integration
-                </li>
-              </ul>
-              <div class="collapse" id="vatMore">
-                <ul class="list-unstyled features-list mt-2">
-                  <li>
-                    <img src="./images/li icon.svg" class="feature-icon" alt="" />Free HMRC Agent Authorisation
-                    Integration
-                  </li>
-                  <li>
-                    <img src="./images/li icon.svg" class="feature-icon" alt="" />
-                    Submission History & Receipts
-                  </li>
-                  <li>
-                    <img src="./images/li icon.svg" class="feature-icon" alt="" />
-                    Live Submission Tracking
-                  </li>
-                  <li>
-                    <img src="./images/li icon.svg" class="feature-icon" alt="" />
-                    Dedicated Support
-                  </li>
-                  <li>
-                    <img src="./images/li icon.svg" class="feature-icon" alt="" />
-                    Secure Cloud Storage
-                  </li>
-                  <li>
-                    <img src="./images/li icon.svg" class="feature-icon" alt="" />
-                    Automated Reminders & Alerts
-                  </li>
-                  <li>
-                    <img src="./images/li icon.svg" class="feature-icon" alt="" />
-                    Free Updates & Compliance
-                  </li>
-                </ul>
-              </div>
-              <button class="btn btn-link p-0 mt-2 text-primary toggle-btn d-flex align-items-center gap-2"
-                type="button" data-bs-toggle="collapse" data-bs-target="#vatMore" aria-expanded="false"
-                aria-controls="vatMore">
-                <span class="toggle-text">Show More</span>
-              </button>
+      <div class="row justify-content-center">
+        <!-- Card 1 -->
+        <div class="col-lg-4 col-md-6 cards">
+          <div class="pricing-card h-100 p-lg-4 p-3">
+            <div class="pricing-header">
+              <h3>VAT FILING</h3>
             </div>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="col-lg-4 col-md-6 cards">
-            <div class="pricing-card h-100 p-lg-4 p-3">
-              <div class="pricing-header">
-                <h3>MTD ITSA</h3>
-              </div>
-              <div class="pricing-price">
-                <h3 class="card-header"><strong>£9.95</strong></h3>
-                <strong class="pt-5">Month</strong>
-              </div>
-              <div class="d-flex justify-content-center align-items-center">
-                <a href="#" class="btn get-started-btn">Get started</a>
-              </div>
-              <ul class="list-unstyled features-list mt-4">
-                <li>
-                  <img src="./images/li icon.svg" class="feature-icon" alt="" />
-                  Quarterly Submissions
-                </li>
-                <li>
-                  <img src="./images/li icon.svg" class="feature-icon" alt="" />
-                  Year-End Finalisation
-                </li>
-                <li>
-                  <img src="./images/li icon.svg" class="feature-icon" alt="" />
-                  Digital Record Keeping
-                </li>
-                <li>
-                  <img src="./images/li icon.svg" class="feature-icon" alt="" />
-                  Income & Expense Categorisation
-                </li>
-                <li>
-                  <img src="./images/li icon.svg" class="feature-icon" alt="" />Free HMRC Agent Authorisation
-                  Integration
-                </li>
-              </ul>
-              <div class="collapse" id="itsaMore">
-                <ul class="list-unstyled features-list mt-2">
-                  <li>
-                    <img src="./images/li icon.svg" class="feature-icon" alt="" />
-                    Submission History & Receipts
-                  </li>
-                  <li>
-                    <img src="./images/li icon.svg" class="feature-icon" alt="" />
-                    Live Submission Status Tracking
-                  </li>
-                  <li>
-                    <img src="./images/li icon.svg" class="feature-icon" alt="" />
-                    Dedicated Support
-                  </li>
-                  <li>
-                    <img src="./images/li icon.svg" class="feature-icon" alt="" />
-                    Secure Cloud Storage
-                  </li>
-                  <li>
-                    <img src="./images/li icon.svg" class="feature-icon" alt="" />
-                    Automated Reminders % Alerts
-                  </li>
-                  <li>
-                    <img src="./images/li icon.svg" class="feature-icon" alt="" />
-                    Free Updates & Compliance
-                  </li>
-                </ul>
-              </div>
-              <button
-                class="btn btn-link p-0 mt-2 text-primary toggle-btn-custom toggle-btn d-flex align-items-center gap-1"
-                type="button" data-bs-toggle="collapse" data-bs-target="#itsaMore" aria-expanded="false"
-                aria-controls="itsaMore">
-                <span class="toggle-text">Show More</span>
-              </button>
+            <div class="pricing-price">
+              <h3 class="card-header"><strong>£9.95</strong></h3>
+              <strong class="pt-5">Month</strong>
             </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="col-lg-4 col-md-6 cards">
-            <div class="pricing-card h-100 p-lg-4 p-3">
-              <div class="pricing-header">
-                <h3>MTD FOR AGENTS</h3>
-              </div>
-              <div class="pricing-price">
-                <h3 class="card-header"><strong>£9.95</strong></h3>
-                <strong class="pt-5">Month</strong>
-              </div>
-              <div class="d-flex justify-content-center align-items-center">
-                <a href="#" class="btn get-started-btn">Get started</a>
-              </div>
-              <ul class="list-unstyled features-list mt-4">
-                <li>
-                  <img src="./images/li icon.svg" class="feature-icon" alt="" />
-                  Quarterly Submissions
-                </li>
-                <li>
-                  <img src="./images/li icon.svg" class="feature-icon" alt="" />
-                  Year-End Finalisation
-                </li>
-                <li>
-                  <img src="./images/li icon.svg" class="feature-icon" alt="" />
-                  Multiple Clients Management
-                </li>
-                <li>
-                  <img src="./images/li icon.svg" class="feature-icon" alt="" />
-                  Digital Record Keeping
-                </li>
-                <li>
-                  <img src="./images/li icon.svg" class="feature-icon" alt="" />
-                  Income & Expense Categorisation
-                </li>
-              </ul>
-              <div class="collapse" id="agentMore">
-                <ul class="list-unstyled features-list mt-2">
-                  <li>
-                    <img src="./images/li icon.svg" class="feature-icon" alt="" />Free HMRC Agent Authorisation
-                  </li>
-                  <li>
-                    <img src="./images/li icon.svg" class="feature-icon" alt="" />
-                    Submission History & Receipts
-                  </li>
-                  <li>
-                    <img src="./images/li icon.svg" class="feature-icon" alt="" />
-                    Live Submission Tracking
-                  </li>
-                  <li>
-                    <img src="./images/li icon.svg" class="feature-icon" alt="" />
-                    Dedicated Support
-                  </li>
-                  <li>
-                    <img src="./images/li icon.svg" class="feature-icon" alt="" />
-                    Secure Cloud Storage
-                  </li>
-                  <li>
-                    <img src="./images/li icon.svg" class="feature-icon" alt="" />
-                    Automated Reminders & alerts
-                  </li>
-                  <li>
-                    <img src="./images/li icon.svg" class="feature-icon" alt="" />
-                    Multiple User Access
-                  </li>
-                  <li>
-                    <img src="./images/li icon.svg" class="feature-icon" alt="" />
-                    Free Updates & Compliance
-                  </li>
-                </ul>
-              </div>
-              <button
-                class="btn btn-link p-0 mt-2 text-primary toggle-btn-custom toggle-btn d-flex align-items-center gap-1"
-                type="button" data-bs-toggle="collapse" data-bs-target="#agentMore" aria-expanded="false"
-                aria-controls="agentMore">
-                <span class="toggle-text">Show More</span>
-              </button>
+            <div class="d-flex justify-content-center align-items-center">
+              <a href="#" class="btn get-started-btn">Get started</a>
             </div>
+            <ul class="list-unstyled features-list mt-4">
+              <li><img src="./images/li icon.svg" class="feature-icon" alt="" /> Quarterly Submissions</li>
+              <li><img src="./images/li icon.svg" class="feature-icon" alt="" /> Year-End Finalisation</li>
+              <li><img src="./images/li icon.svg" class="feature-icon" alt="" /> Digital Record Keeping</li>
+              <li><img src="./images/li icon.svg" class="feature-icon" alt="" /> Income & Expense Categorisation</li>
+              <li><img src="./images/li icon.svg" class="feature-icon" alt="" /> VAT Integration</li>
+            </ul>
+            <div class="collapse" id="vatMore">
+              <ul class="list-unstyled features-list mt-2">
+                <li><img src="./images/li icon.svg" class="feature-icon" alt="" /> Free HMRC Agent Authorisation
+                  Integration</li>
+                <li><img src="./images/li icon.svg" class="feature-icon" alt="" /> Submission History & Receipts</li>
+                <li><img src="./images/li icon.svg" class="feature-icon" alt="" /> Live Submission Tracking</li>
+                <li><img src="./images/li icon.svg" class="feature-icon" alt="" /> Dedicated Support</li>
+                <li><img src="./images/li icon.svg" class="feature-icon" alt="" /> Secure Cloud Storage</li>
+                <li><img src="./images/li icon.svg" class="feature-icon" alt="" /> Automated Reminders & Alerts</li>
+                <li><img src="./images/li icon.svg" class="feature-icon" alt="" /> Free Updates & Compliance</li>
+              </ul>
+            </div>
+            <button class="btn btn-link p-0 mt-2 text-primary toggle-btn d-flex align-items-center gap-2" type="button"
+              data-bs-toggle="collapse" data-bs-target="#vatMore" aria-expanded="false" aria-controls="vatMore">
+              <span class="toggle-text">Show More</span>
+            </button>
           </div>
         </div>
-      </div>
-    </div>
+
+        <!-- Card 2 -->
+        <div class="col-lg-4 col-md-6 cards">
+          <div class="pricing-card h-100 p-lg-4 p-3">
+            <div class="pricing-header">
+              <h3>MTD ITSA</h3>
+            </div>
+            <div class="pricing-price">
+              <h3 class="card-header"><strong>£9.95</strong></h3>
+              <strong class="pt-5">Month</strong>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+              <a href="#" class="btn get-started-btn">Get started</a>
+            </div>
+            <ul class="list-unstyled features-list mt-4">
+              <li><img src="./images/li icon.svg" class="feature-icon" alt="" /> Quarterly Submissions</li>
+              <li><img src="./images/li icon.svg" class="feature-icon" alt="" /> Year-End Finalisation</li>
+              <li><img src="./images/li icon.svg" class="feature-icon" alt="" /> Digital Record Keeping</li>
+              <li><img src="./images/li icon.svg" class="feature-icon" alt="" /> Income & Expense Categorisation</li>
+              <li><img src="./images/li icon.svg" class="feature-icon" alt="" /> Free HMRC Agent Authorisation
+                Integration</li>
+            </ul>
+            <div class="collapse" id="itsaMore">
+              <ul class="list-unstyled features-list mt-2">
+                <li><img src="./images/li icon.svg" class="feature-icon" alt="" /> Submission History & Receipts</li>
+                <li><img src="./images/li icon.svg" class="feature-icon" alt="" /> Live Submission Status Tracking</li>
+                <li><img src="./images/li icon.svg" class="feature-icon" alt="" /> Dedicated Support</li>
+                <li><img src="./images/li icon.svg" class="feature-icon" alt="" /> Secure Cloud Storage</li>
+                <li><img src="./images/li icon.svg" class="feature-icon" alt="" /> Automated Reminders & Alerts</li>
+                <li><img src="./images/li icon.svg" class="feature-icon" alt="" /> Free Updates & Compliance</li>
+              </ul>
+            </div>
+            <button class="btn btn-link p-0 mt-2 text-primary toggle-btn d-flex align-items-center gap-1" type="button"
+              data-bs-toggle="collapse" data-bs-target="#itsaMore" aria-expanded="false" aria-controls="itsaMore">
+              <span class="toggle-text">Show More</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-lg-4 col-md-6 cards">
+          <div class="pricing-card h-100 p-lg-4 p-3">
+            <div class="pricing-header">
+              <h3>MTD FOR AGENTS</h3>
+            </div>
+            <div class="pricing-price">
+              <h3 class="card-header"><strong>£9.95</strong></h3>
+              <strong class="pt-5">Month</strong>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+              <a href="#" class="btn get-started-btn">Get started</a>
+            </div>
+            <ul class="list-unstyled features-list mt-4">
+              <li><img src="./images/li icon.svg" class="feature-icon" alt="" /> Quarterly Submissions</li>
+              <li><img src="./images/li icon.svg" class="feature-icon" alt="" /> Year-End Finalisation</li>
+              <li><img src="./images/li icon.svg" class="feature-icon" alt="" /> Multiple Clients Management</li>
+              <li><img src="./images/li icon.svg" class="feature-icon" alt="" /> Digital Record Keeping</li>
+              <li><img src="./images/li icon.svg" class="feature-icon" alt="" /> Income & Expense Categorisation</li>
+            </ul>
+            <div class="collapse" id="agentMore">
+              <ul class="list-unstyled features-list mt-2">
+                <li><img src="./images/li icon.svg" class="feature-icon" alt="" /> Free HMRC Agent Authorisation</li>
+                <li><img src="./images/li icon.svg" class="feature-icon" alt="" /> Submission History & Receipts</li>
+                <li><img src="./images/li icon.svg" class="feature-icon" alt="" /> Live Submission Tracking</li>
+                <li><img src="./images/li icon.svg" class="feature-icon" alt="" /> Dedicated Support</li>
+                <li><img src="./images/li icon.svg" class="feature-icon" alt="" /> Secure Cloud Storage</li>
+                <li><img src="./images/li icon.svg" class="feature-icon" alt="" /> Automated Reminders & Alerts</li>
+                <li><img src="./images/li icon.svg" class="feature-icon" alt="" /> Multiple User Access</li>
+                <li><img src="./images/li icon.svg" class="feature-icon" alt="" /> Free Updates & Compliance</li>
+              </ul>
+            </div>
+            <button class="btn btn-link p-0 mt-2 text-primary toggle-btn d-flex align-items-center gap-1" type="button"
+              data-bs-toggle="collapse" data-bs-target="#agentMore" aria-expanded="false" aria-controls="agentMore">
+              <span class="toggle-text">Show More</span>
+            </button>
+          </div>
+        </div>
+      </div><!-- row -->
+    </div><!-- container -->
   </section>
 
+
   <section id="contact" class="fifth d-flex align-items-center">
-    <div class="container-fluid">
+    <div class="container">
       <div class="row justify-content-center align-items-center">
+
         <!-- Contact Form -->
         <div class="col-lg-6 col-md-10">
           <div class="contact-form p-4 p-md-5 shadow rounded-4 h-100">
@@ -811,15 +701,16 @@
                 <div class="contact-icon rounded-circle d-flex align-items-center justify-content-center me-3 mt-1">
                   <img src="./images/Location.svg" width="45px" alt="Location icon" />
                 </div>
-                <span>20 Wenlock Road, London, <br />
-                  England, N1 7GU</span>
+                <span>20 Wenlock Road, London, <br /> England, N1 7GU</span>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+
+      </div><!-- row -->
+    </div><!-- container -->
   </section>
+
 
   <section>
     <div class="container">
@@ -844,10 +735,10 @@
   </section>
 
   <footer id="footer" class="grid-bg-css footer-section">
-    <div class="container-fluid h-100 d-flex flex-column justify-content-between py-3">
+    <div class="container h-100 d-flex flex-column justify-content-between py-3">
       <div class="row footer-row">
         <!-- Logo + Description -->
-        <div class="col-xl-5 col-lg-5 description mb-3 mb-lg-">
+        <div class="col-xl-5 col-lg-5 description mb-3">
           <img class="footer-logo img-fluid mb-3" src="./images/logo footer svg.svg" alt="Logo" />
           <p class="footer-para">
             @ATaxfiler provides Making Tax Digital (MTD) solutions tailored
@@ -858,17 +749,18 @@
             company number 16574109.
           </p>
           <div class="social-icons mt-3">
-            <a href="#"><img src="./images/x.svg" alt="" /></a>
-            <a href="#"><img src="./images/facebook.svg" alt="" /></a>
-            <a href="#"><img src="./images/instagram.svg" alt="" /></a>
-            <a href="#"><img src="./images/linkedin-logo.png" class="bg-white linkedin-logo" alt="" /></a>
+            <a href="#"><img src="./images/x.svg" alt="X (Twitter)" /></a>
+            <a href="#"><img src="./images/facebook.svg" alt="Facebook" /></a>
+            <a href="#"><img src="./images/instagram.svg" alt="Instagram" /></a>
+            <a href="#"><img src="./images/linkedin-logo.png" class="bg-white linkedin-logo" alt="LinkedIn" /></a>
           </div>
         </div>
 
+        <!-- Links + Newsletter -->
         <div class="col-xl-7 col-lg-6">
           <div class="footer-links-box d-flex flex-column flex-sm-row justify-content-around mt-lg-3">
             <!-- Services -->
-            <div class="">
+            <div>
               <h5 class="fw-bold">Services</h5>
               <ul class="list-unstyled me-lg-4">
                 <li><a href="#vat-filling">VAT Filing</a></li>
@@ -879,7 +771,7 @@
             </div>
 
             <!-- Resources -->
-            <div class="">
+            <div>
               <h5 class="fw-bold">Resources</h5>
               <ul class="list-unstyled me-lg-5">
                 <li><a href="#services">Services</a></li>
@@ -890,7 +782,7 @@
             </div>
 
             <!-- Legal -->
-            <div class="">
+            <div>
               <h5 class="fw-bold">Legal</h5>
               <ul class="list-unstyled">
                 <li><a href="#">Terms and conditions</a></li>
@@ -902,24 +794,23 @@
           </div>
 
           <!-- Newsletter -->
-          <div class="container mail-container px-0">
+          <div class="mail-container px-0 mt-4">
             <div class="bottom-right">
               <p class="mail-p ms-4">Subscribe Our Newsletter</p>
               <div class="newsletter-box position-relative mt-2">
                 <input id="email-msg" name="email-msg" type="email" class="form-control py-2 py-xl-3"
                   placeholder="Email" />
-                <span class="mail-icon"><img class="email-img" src="./images/Mail (1).svg" alt="" /></span>
+                <span class="mail-icon"><img class="email-img" src="./images/Mail (1).svg" alt="Mail icon" /></span>
               </div>
             </div>
           </div>
         </div>
       </div>
 
+      <!-- Footer Bottom -->
       <div class="footer-rights">
-        <div>
-          <hr class="border-light mt-4" />
-        </div>
-        <p class="footer-para mt-4">
+        <hr class="border-light mt-4" />
+        <p class="footer-para mt-4 mb-0">
           &copy; 2025 @ATaxfiler Ltd. All Rights Reserved.
         </p>
       </div>
